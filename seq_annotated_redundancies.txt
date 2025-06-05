@@ -1,0 +1,816 @@
+[
+  {
+    "file": "../all_game_files/4a82a50d27933bd2_d698.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('clean all plates')",
+      "Driver.Say('Certainly.')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face plate location
+      "Driver.PickUp('Plate')",                             // Driver picks up a plate to clean
+      "Driver.PutAOnB('Plate', 'Table')",                    // REMOVE: placing on table is not part of cleaning
+      "Driver.Say('Wrong.')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face sink
+      "Driver.Move(1.25)",                                  // Driver moves to the sink location
+      "Driver.ToggleOff('Faucet')",                         // REMOVE: faucet is already off by default
+      "Driver.PutAOnB('Plate', 'Sink')",                     // Driver places plate in sink to clean
+      "Driver.ToggleOn('Faucet')",                           // Driver turns on faucet to rinse plate
+      "Driver.Say('how many?')",
+      "Commander.Say('i will finish thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/f2f6723ebab1e6a2_bfeb.game.json",
+    "actions": [
+      "Commander.Say('Hello, water the plant')",
+      "Driver.Say('Certainly.')",
+      "Driver.Move(1.5)",                                   // Driver moves toward the plant area
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the pot
+      "Driver.Move(0.25)",                                  // Driver moves closer to the pot
+      "Driver.Say('Fetching bowl.')",
+      "Driver.PickUp('Bowl')",                              // Driver picks up bowl to fetch water
+      "Driver.PutAOnB('Bowl', 'Table')",                     // REMOVE: placing bowl on table is incorrect
+      "Driver.Say('Wrong.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the plant directly
+      "Driver.Move(0.25)",                                  // Driver adjusts position toward the plant
+      "Driver.TurnLeft(90.0)",                              // Driver turns to align for pouring
+      "Driver.Move(0.5)",                                   // Driver moves within pouring range
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant')",        // Driver pours water from bowl into plant
+      "Commander.Say('Good job')",
+      "Driver.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/68030be4329479ac_40a1.game.json",
+    "actions": [
+      "Driver.Say('what can i do today')",
+      "Driver.TurnLeft(270.0)",                             // Driver turns to face potato area
+      "Commander.Say('Hello, please boil a potato.')",
+      "Driver.Say('Certainly.')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face the potato
+      "Driver.PickUp('Potato')",                            // Driver picks up the potato
+      "Driver.PutAOnB('Potato', 'Table')",                   // REMOVE: placing potato on table is not part of boiling
+      "Driver.Say('Wrong.')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face stove area
+      "Driver.Move(4.75)",                                  // Driver moves to the stove
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the pot
+      "Driver.Move(0.5)",                                   // Driver moves closer to the pot
+      "Driver.PutAOnB('Potato', 'Pot')",                     // Driver places potato into pot
+      "Driver.Say('done')",
+      "Commander.Say('Great job. The task is complete.')"
+    ]
+  },
+  {
+    "file": "../all_game_files/cae57f0a642448c5_ac99.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what should I do?')",
+      "Driver.Move(-2.75)",                                 // Driver moves backward toward the cloth location
+      "Driver.Say('Let me check.')",
+      "Commander.Say('hello. Rinse dirty cloth with water.')",
+      "Driver.Move(-1.25)",                                 // Driver continues moving toward sink area
+      "Driver.PickUp('Cloth')",                             // Driver picks up the dirty cloth
+      "Driver.PutAOnB('Cloth', 'Table')",                    // REMOVE: placing cloth on table is incorrect
+      "Driver.Say('Wrong.')",
+      "Driver.Move(0.75)",                                  // Driver moves to the sink
+      "Driver.PutAOnB('Cloth', 'Sink')",                     // Driver places cloth in sink to rinse
+      "Driver.Move(-0.5)",                                  // Driver steps back after placing cloth
+      "Driver.ToggleOn('Faucet')",                           // Driver turns on faucet to rinse cloth
+      "Driver.PickUp('Cloth')",                             // Driver picks up the cloth after rinsing
+      "Commander.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/03882bf65cc08dd2_d4cd.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('hello')",
+      "Driver.Say('Hi')",
+      "Driver.Say('Allow me to prepare.')",
+      "Commander.Say('please rinse the plate in the sink')",
+      "Driver.Navigation()",                                // Driver navigates to the sink area
+      "Driver.Move(0.5)",                                   // Driver moves closer to the sink
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face faucet
+      "Driver.Move(0.5)",                                   // Driver moves under the faucet
+      "Driver.ToggleOn('Faucet')",                           // Driver turns on faucet to rinse plate
+      "Driver.Say('That is off.')",
+      "Driver.ToggleOff('Faucet')",                          // Driver turns off faucet after rinsing
+      "Driver.Say('Done')",
+      "Commander.Say('well done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/a4e0351b007787d8_3b07.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('Hello! The cup is dirty, rinse it with water.')",
+      "Driver.Move(3.5)",                                   // Driver moves toward the mug location
+      "Driver.PickUp('Mug')",                               // Driver picks up the dirty mug
+      "Driver.PutAOnB('Mug', 'Table')",                      // REMOVE: placing mug on table is not part of rinsing
+      "Driver.Say('That is wrong.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face sink
+      "Driver.Move(3.0)",                                   // Driver moves to sink
+      "Driver.PutAOnB('Mug', 'CounterTop')",                 // REMOVE: placing on countertop is incorrect
+      "Driver.ToggleOff('Faucet')",                          // REMOVE: faucet is already off
+      "Driver.PickUp('Mug')",                               // Driver picks up mug for correct placement
+      "Driver.PutAOnB('Mug', 'Sink')",                       // Driver places mug in sink to rinse
+      "Commander.Say('Perfect! Thats it!')",
+      "Driver.ToggleOn('Faucet')"                            // Driver turns on faucet to rinse mug
+    ]
+  },
+  {
+    "file": "../all_game_files/fa88fcb69514bd64_1cc0.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face the mug storage
+      "Commander.Say('please prepare a coffee in a clean mug')",
+      "Driver.Say('Certainly.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face faucet
+      "Driver.Move(3.25)",                                  // Driver moves to faucet area
+      "Driver.ToggleOn('Faucet')",                           // REMOVE: not needed for preparing coffee
+      "Driver.Say('Skipping.')",
+      "Driver.ToggleOff('Faucet')",                          // REMOVE: faucet was not on
+      "Driver.PickUp('Mug')",                               // Driver picks up a clean mug
+      "Driver.PutAOnB('Mug', 'Sink')",                       // Driver places mug in sink to rinse
+      "Driver.ToggleOn('CoffeeMachine')",                    // Driver turns on coffee machine to brew coffee
+      "Driver.Say('done')",
+      "Commander.Say('thank you that\\'s everything')"
+    ]
+  },
+  {
+    "file": "../all_game_files/a9e62b795c603884_c7d6.game.json",
+    "actions": [
+      "Driver.Say('Hello, what am I doing today')",
+      "Commander.Say('hi')",
+      "Commander.Say('get the cloth from the bin beside the toilet')",
+      "Driver.Say('Certainly.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face bin
+      "Driver.Move(0.75)",                                  // Driver moves to bin location
+      "Commander.Say('and put in the bathtub')",
+      "Commander.Say('look down')",
+      "Driver.Say('Searching.')",
+      "Driver.Move(1.25)",                                  // Driver moves to locate cloth inside bin
+      "Driver.PickUp('Cloth')",                             // Driver picks up the cloth
+      "Driver.PutAOnB('Cloth', 'Floor')",                    // REMOVE: placing on floor is incorrect
+      "Driver.Say('Wrong.')",
+      "Driver.TurnLeft(270.0)",                             // Driver turns to face bathtub
+      "Driver.Move(2.0)",                                   // Driver moves to bathtub
+      "Driver.PutAOnB('Cloth', 'Bathtub')"                   // Driver places cloth in bathtub
+    ]
+  },
+  {
+    "file": "../all_game_files/40cc5749c7d59c06_2288.game.json",
+    "actions": [
+      "Driver.Say('how can i help today?')",
+      "Driver.Move(1.0)",                                   // Driver moves toward the pot
+      "Commander.Say('i\\'d lke my plant watered')",
+      "Driver.Say('Certainly.')",
+      "Driver.Move(1.25)",                                  // Driver moves closer to pot
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face plant
+      "Driver.Move(0.5)",                                   // Driver moves to plant
+      "Driver.Say('Gathering pot.')",
+      "Driver.PickUp('Pot')",                               // Driver picks up pot containing water
+      "Driver.PutAOnB('Pot', 'Floor')",                      // REMOVE: placing on floor is not part of watering
+      "Driver.Say('Wrong.')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",         // Driver pours water from pot into plant
+      "Driver.Say('found a pot with water')",
+      "Driver.Say('should be done')",
+      "Commander.Say('thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/abf1ba0f0c8908f8_37ed.game.json",
+    "actions": [
+      "Commander.Say('hello')",
+      "Commander.Say('Are you ready for your task?')",
+      "Commander.Say('Please put the watch on the coffee table.')",
+      "Commander.Say('Please respond')",
+      "Driver.Say('Certainly.')",
+      "Driver.Move(1.0)",                                   // Driver moves toward the watch location
+      "Driver.PickUp('Watch')",                             // Driver picks up a watch (likely the wrong one)
+      "Driver.PutAOnB('Watch', 'Shelf')",                    // REMOVE: placing on shelf is incorrect
+      "Driver.Say('Wrong spot.')",
+      "Driver.Move(2.0)",                                   // Driver moves to locate the correct watch
+      "Driver.PickUp('Watch2')",                            // Driver picks up the correct watch
+      "Driver.TurnLeft(180.0)",                              // Driver turns to face coffee table
+      "Driver.PutAOnB('Watch2', 'Floor')",                    // REMOVE: placing on floor is incorrect
+      "Driver.Say('That is not right.')",
+      "Driver.PutAOnB('Watch2', 'CoffeeTable')",             // Driver places watch on coffee table
+      "Commander.Say('Thank you task finished')"
+    ]
+  },
+  {
+    "file": "../all_game_files/0a743cc844d97d87_5037.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Commander.Say('please put all pepper shakers in a cabinet')",
+      "Driver.Move(0.5)",                                   // Driver moves toward the salt shaker
+      "Driver.PickUp('SaltShaker')",                        // Driver picks up salt shaker (wrong object)
+      "Driver.PutAOnB('SaltShaker', 'Counter')",             // REMOVE: placing salt shaker here is incorrect
+      "Driver.Say('Oops, wrong object.')",
+      "Driver.Open('Cabinet')",                             // Driver opens cabinet to place items
+      "Driver.PickUp('PepperShaker')",                       // Driver picks up a pepper shaker
+      "Driver.PutAOnB('PepperShaker', 'Shelf')",             // REMOVE: placing on shelf is incorrect
+      "Driver.Say('Not there.')",
+      "Driver.PickUp('PepperShaker')",                       // Driver re-picks the pepper shaker
+      "Driver.PutAOnB('PepperShaker', 'Cabinet')",           // Driver places pepper shaker into cabinet
+      "Driver.ToggleOff('Microwave')",                       // REMOVE: turning off the microwave is irrelevant
+      "Driver.Say('Let me check the microwave first.')",
+      "Driver.Open('Microwave')",                            // Driver opens the microwave to check inside
+      "Driver.PickUp('Potato')",                             // REMOVE: picking up potato is irrelevant
+      "Driver.PutAOnB('Potato', 'Table')",                    // REMOVE: placing potato here is not needed
+      "Driver.Say('This is not needed right now.')",
+      "Driver.PickUp('Potato')",                             // REMOVE: picking up potato again is irrelevant
+      "Driver.PutAOnB('Potato', 'CounterTop')",               // REMOVE: placing potato on countertop is irrelevant
+      "Driver.PickUp('PepperShaker2')",                       // Driver picks up the second pepper shaker
+      "Driver.PutAOnB('PepperShaker2', 'Floor')",             // REMOVE: placing on floor is incorrect
+      "Driver.Say('Wrong placement.')",
+      "Driver.PickUp('PepperShaker2')",                       // Driver re-picks second pepper shaker
+      "Driver.PutAOnB('PepperShaker2', 'Cabinet')"            // Driver places second pepper shaker into cabinet
+    ]
+  },
+  {
+    "file": "../all_game_files/f22a5e8ac037a420_1c14.game.json",
+    "actions": [
+      "Driver.Say('Hello. What is my first task?')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face nearby items
+      "Driver.Move(1.0)",                                   // Driver moves to inspect tools
+      "Driver.Say('Let me see what we have.')",
+      "Driver.PickUp('Spoon')",                             // Driver picks up spoon initially
+      "Driver.PutAOnB('Spoon', 'Table')",                    // REMOVE: spoon is not needed to make coffee
+      "Driver.Say('Not the right tool.')",
+      "Commander.Say('Please put coffee in mug')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face mugs
+      "Driver.PickUp('Mug')",                               // Driver picks up a mug
+      "Driver.Say('There are many mugs.')",
+      "Driver.PutAOnB('Mug', 'Shelf')",                      // REMOVE: placing on shelf is incorrect
+      "Driver.Say('No, that is not right.')",
+      "Driver.PickUp('Mug')",                               // Driver picks up correct mug
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face coffee machine
+      "Driver.Move(2.25)",                                  // Driver moves to coffee machine
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",              // Driver places mug under coffee machine
+      "Driver.ToggleOn('CoffeeMachine')",                   // Driver starts the coffee machine
+      "Driver.Say('Coffee is brewing')",
+      "Commander.Say('awesome we are done!')",
+      "Driver.Say('Great!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/dda9ea220761cc52_5a27.game.json",
+    "actions": [
+      "Driver.Say('my task')",
+      "Commander.Say('boil a potato')",
+      "Driver.Say('where is it')",
+      "Commander.Say('on the chair')",
+      "Driver.Move(1.0)",                                   // Driver moves to the chair
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the chair
+      "Driver.PickUp('Book')",                              // REMOVE: picking up book is irrelevant
+      "Driver.PutAOnB('Book', 'Shelf')",                     // REMOVE: placing book on shelf is irrelevant
+      "Driver.Say('Wrong item.')",
+      "Driver.PickUp('Potato')",                            // Driver picks up the potato
+      "Driver.Say('Found it.')",
+      "Driver.TurnLeft(360.0)",                             // REMOVE: full rotation has no net effect
+      "Driver.Move(6.25)",                                  // Driver moves to the table/stove area
+      "Driver.PutAOnB('Potato', 'Table')",                   // REMOVE: placing on table is not part of boiling
+      "Driver.Say('That is not the pot.')",
+      "Driver.PickUp('Potato')",                            // Driver picks up the potato again
+      "Driver.PutAOnB('Potato', 'Pot')",                     // Driver places potato into pot
+      "Driver.ToggleOn('StoveKnob')",                        // Driver turns on stove knob to boil
+      "Commander.Say('done')",
+      "Driver.Say('Extra stove knob?')",
+      "Driver.ToggleOn('StoveKnob2')"                        // REMOVE: second stove knob activation is irrelevant
+    ]
+  },
+  {
+    "file": "../all_game_files/843b6119ebcac0fb_cced.game.json",
+    "actions": [
+      "Commander.Say('please can you put the tomato i nthe fridge?')",
+      "Commander.Say('they are in the middle unite next to the fridge')",
+      "Driver.TurnLeft(270.0)",                             // Driver turns to face the middle unit
+      "Driver.Say('Looking for vegetables.')",
+      "Driver.Move(1.0)",                                   // Driver moves to the middle unit
+      "Driver.PickUp('Apple')",                             // REMOVE: picking up apple is not the tomato
+      "Driver.PutAOnB('Apple', 'Table')",                    // REMOVE: placing apple on table is incorrect
+      "Driver.Say('Not the tomato.')",
+      "Driver.Open('Cabinet')",                             // Driver opens the first cabinet
+      "Driver.Move(-0.25)",                                 // Driver adjusts position slightly
+      "Driver.Open('Cabinet2')",                            // Driver opens the second cabinet
+      "Driver.Say('Checking second cabinet.')",
+      "Driver.Open('Cabinet3')",                            // Driver opens the third cabinet
+      "Commander.Say('the next one')",
+      "Driver.PickUp('Tomato')",                            // Driver picks up the tomato
+      "Driver.Say('Got it.')",
+      "Driver.PutAOnB('Tomato', 'CounterTop')",              // Driver places tomato on countertop
+      "Driver.Say('Almost there.')",
+      "Driver.Open('Fridge')",                              // Driver opens the fridge
+      "Driver.PutAOnB('Tomato', 'Fridge')",                  // Driver places tomato in fridge
+      "Commander.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/10416a22a004208e_48f4.game.json",
+    "actions": [
+      "Driver.Say('hi, what can i do for you?')",
+      "Commander.Say('just need my plant watered please')",
+      "Driver.Say('sure')",
+      "Driver.Move(0.75)",                                  // Driver moves toward the stove where the container is
+      "Driver.Say('i see a container with water on the stove')",
+      "Driver.PickUp('Bowl')",                              // Driver picks up the bowl
+      "Driver.PutAOnB('Bowl', 'Shelf')",                     // REMOVE: placing bowl on shelf is incorrect
+      "Driver.Say('Not the right container.')",
+      "Driver.PickUp('Pot')",                               // Driver picks up the correct pot
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the plant
+      "Driver.Move(1.0)",                                   // Driver moves to the plant
+      "Driver.Say('Getting closer.')",
+      "Commander.Say('nice that should work')",
+      "Driver.Say('Pouring now.')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",         // Driver pours water into plant
+      "Driver.Say('Water delivered.')",
+      "Driver.Say('doen')",
+      "Driver.Say('done')",
+      "Commander.Say('sweet')"
+    ]
+  },
+  {
+    "file": "../all_game_files/fbd409f780c2bf3b_cd58.game.json",
+    "actions": [
+      "Commander.Say('hi, put all remote controls on the coffee tables')",
+      "Commander.Say('on a coffee table sorry')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the initial area
+      "Driver.Move(0.25)",                                  // Driver moves to search for remotes
+      "Driver.Say('Where are the remotes?')",
+      "Driver.PickUp('Magazine')",                          // REMOVE: magazine is not a remote
+      "Driver.PutAOnB('Magazine', 'Shelf')",                 // REMOVE: placing magazine is irrelevant
+      "Driver.Say('Not a remote.')",
+      "Driver.Move(2.25)",                                  // Driver moves toward the sofa
+      "Commander.Say('one is on the single sofa seat')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face the sofa
+      "Driver.Say('Approaching sofa.')",
+      "Driver.Move(1.0)",                                   // Driver moves to the sofa
+      "Driver.PickUp('RemoteControl')",                      // Driver picks up the remote
+      "Driver.Say('Holding the remote.')",
+      "Driver.PutAOnB('RemoteControl', 'Shelf')",            // REMOVE: placing on shelf is wrong
+      "Driver.Say('Wrong table.')",
+      "Driver.PickUp('RemoteControl')",                      // Driver picks remote again to correct placement
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face coffee table
+      "Driver.PutAOnB('RemoteControl', 'CoffeeTable')",      // Driver places remote on coffee table
+      "Driver.TurnLeft(90.0)"                                // Driver turns afterward
+    ]
+  },
+  {
+    "file": "../all_game_files/39c72b597c0254a0_4822.game.json",
+    "actions": [
+      "Driver.Say('my task today')",
+      "Commander.Say('The plant needs to be watered')",
+      "Driver.Say('Checking plan.')",
+      "Driver.TurnLeft(270.0)",                             // Driver turns to face the plant area
+      "Driver.Move(4.75)",                                  // Driver moves to the table
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the table directly
+      "Driver.Say('Where is the plant?')",
+      "Commander.Say('The plant is on the table')",
+      "Driver.Say('Found the table.')",
+      "Driver.Move(0.5)",                                   // Driver moves onto the table
+      "Driver.PutAOnB('Vase', 'Floor')",                     // REMOVE: placing vase on floor is wrong
+      "Driver.Say('Not the pot.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the pot
+      "Driver.PickUp('Pot')",                               // Driver picks up the pot containing water
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the plant
+      "Driver.Move(4.0)",                                   // Driver moves to the plant
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",          // Driver pours water into plant
+      "Commander.Say('All done!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/823f0fe4bda8607c_34d8.game.json",
+    "actions": [
+      "Driver.Say('hey how can I help?')",
+      "Commander.Say('clean the plate please')",
+      "Driver.Say('Certainly.')",
+      "Driver.Move(1.0)",                                   // Driver moves toward the sink area
+      "Driver.Say('Searching for plate.')",
+      "Driver.PickUp('Cup')",                               // REMOVE: cup is not the plate
+      "Driver.PutAOnB('Cup', 'Table')",                      // REMOVE: placing cup is irrelevant
+      "Driver.Say('Not the plate.')",
+      "Driver.PickUp('Plate')",                             // Driver picks up the plate
+      "Driver.TurnLeft(180.0)",                              // Driver turns to face the sink
+      "Driver.Move(2.0)",                                   // Driver moves to the sink
+      "Driver.TurnLeft(90.0)",                              // Driver turns to align over sink
+      "Driver.Move(0.25)",                                  // Driver moves closer to sink basin
+      "Driver.Say('Positioning over sink.')",
+      "Driver.TurnLeft(180.0)",                              // Driver turns to face correct orientation
+      "Driver.PutAOnB('Plate', 'Sink')",                     // Driver places plate in sink to rinse
+      "Driver.Say('Rinsing now.')",
+      "Driver.ToggleOn('Faucet')",                          // Driver turns on faucet to rinse plate
+      "Driver.Say('Water flowing.')",
+      "Driver.ToggleOff('Faucet')",                         // Driver turns off faucet after rinsing
+      "Commander.Say('thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/4a82a50d27933bd2_d698.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('clean all plates')",
+      "Driver.Say('Certainly.')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face plate location
+      "Driver.PickUp('Plate')",                             // Driver picks up a plate to clean
+      "Driver.PutAOnB('Plate', 'Table')",                    // REMOVE: placing on table is not part of cleaning task
+      "Driver.Say('Wrong.')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face the sink
+      "Driver.Move(1.25)",                                  // Driver moves to the sink location
+      "Driver.ToggleOff('Faucet')",                         // REMOVE: faucet is already off by default
+      "Driver.PutAOnB('Plate', 'Sink')",                     // Driver places plate in sink to clean
+      "Driver.ToggleOn('Faucet')",                           // Driver turns on faucet to rinse plate
+      "Driver.Say('how many?')",
+      "Commander.Say('i will finish thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/f2f6723ebab1e6a2_bfeb.game.json",
+    "actions": [
+      "Commander.Say('Hello, water the plant')",
+      "Driver.Say('Certainly.')",
+      "Driver.Move(1.5)",                                   // Driver moves toward the plant area
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the pot
+      "Driver.Move(0.25)",                                  // Driver moves closer to the pot
+      "Driver.Say('Fetching bowl.')",
+      "Driver.PickUp('Bowl')",                              // Driver picks up bowl to fetch water
+      "Driver.PutAOnB('Bowl', 'Table')",                     // REMOVE: placing bowl on table is incorrect
+      "Driver.Say('Wrong.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the plant directly
+      "Driver.Move(0.25)",                                  // Driver adjusts position toward the plant
+      "Driver.TurnLeft(90.0)",                              // Driver turns to align for pouring
+      "Driver.Move(0.5)",                                   // Driver moves within pouring range
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant')",        // Driver pours water from bowl into plant
+      "Commander.Say('Good job')",
+      "Driver.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/68030be4329479ac_40a1.game.json",
+    "actions": [
+      "Driver.Say('what can i do today')",
+      "Driver.TurnLeft(270.0)",                             // Driver turns to face the potato area
+      "Commander.Say('Hello, please boil a potato.')",
+      "Driver.Say('Certainly.')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face the potato
+      "Driver.PickUp('Potato')",                            // Driver picks up the potato
+      "Driver.PutAOnB('Potato', 'Table')",                   // REMOVE: placing potato on table is not part of boiling task
+      "Driver.Say('Wrong.')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face the stove area
+      "Driver.Move(4.75)",                                  // Driver moves to the stove
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the pot
+      "Driver.Move(0.5)",                                   // Driver moves closer to the pot
+      "Driver.PutAOnB('Potato', 'Pot')",                     // Driver places potato into pot
+      "Driver.Say('done')",
+      "Commander.Say('Great job. The task is complete.')"
+    ]
+  },
+  {
+    "file": "../all_game_files/cae57f0a642448c5_ac99.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what should I do?')",
+      "Driver.Move(-2.75)",                                 // Driver moves backward toward cloth storage
+      "Driver.Say('Let me check.')",
+      "Commander.Say('hello. Rinse dirty cloth with water.')",
+      "Driver.Move(-1.25)",                                 // Driver continues moving to the sink area
+      "Driver.PickUp('Cloth')",                             // Driver picks up the dirty cloth
+      "Driver.PutAOnB('Cloth', 'Table')",                    // REMOVE: placing cloth on table is incorrect
+      "Driver.Say('Wrong.')",
+      "Driver.Move(0.75)",                                  // Driver moves to the sink
+      "Driver.PutAOnB('Cloth', 'Sink')",                     // Driver places cloth in sink to rinse
+      "Driver.Move(-0.5)",                                  // Driver steps back after placing cloth
+      "Driver.ToggleOn('Faucet')",                           // Driver turns on faucet to rinse cloth
+      "Driver.PickUp('Cloth')",                             // Driver picks up the cloth after rinsing
+      "Commander.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/03882bf65cc08dd2_d4cd.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('hello')",
+      "Driver.Say('Hi')",
+      "Driver.Say('Allow me to prepare.')",
+      "Commander.Say('please rinse the plate in the sink')",
+      "Driver.Navigation()",                                // Driver navigates to the sink area
+      "Driver.Move(0.5)",                                   // Driver moves closer to the sink
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the faucet
+      "Driver.Move(0.5)",                                   // Driver moves under the faucet
+      "Driver.ToggleOn('Faucet')",                           // Driver turns on faucet to rinse plate
+      "Driver.Say('That is off.')",
+      "Driver.ToggleOff('Faucet')",                          // Driver turns off faucet after rinsing
+      "Driver.Say('Done')",
+      "Commander.Say('well done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/a4e0351b007787d8_3b07.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('Hello! The cup is dirty, rinse it with water.')",
+      "Driver.Move(3.5)",                                   // Driver moves toward the mug location
+      "Driver.PickUp('Mug')",                               // Driver picks up the dirty mug
+      "Driver.PutAOnB('Mug', 'Table')",                      // REMOVE: placing mug on table is not part of rinsing
+      "Driver.Say('That is wrong.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the sink
+      "Driver.Move(3.0)",                                   // Driver moves to the sink
+      "Driver.PutAOnB('Mug', 'CounterTop')",                 // REMOVE: placing on countertop is incorrect
+      "Driver.ToggleOff('Faucet')",                          // REMOVE: faucet is already off
+      "Driver.PickUp('Mug')",                               // Driver picks up mug for correct placement
+      "Driver.PutAOnB('Mug', 'Sink')",                       // Driver places mug in sink to rinse
+      "Commander.Say('Perfect! Thats it!')",
+      "Driver.ToggleOn('Faucet')"                            // Driver turns on faucet to rinse mug
+    ]
+  },
+  {
+    "file": "../all_game_files/fa88fcb69514bd64_1cc0.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face the mug storage
+      "Commander.Say('please prepare a coffee in a clean mug')",
+      "Driver.Say('Certainly.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face faucet
+      "Driver.Move(3.25)",                                  // Driver moves to faucet area
+      "Driver.ToggleOn('Faucet')",                           // REMOVE: not needed for preparing coffee
+      "Driver.Say('Skipping.')",
+      "Driver.ToggleOff('Faucet')",                          // REMOVE: faucet was not on
+      "Driver.PickUp('Mug')",                               // Driver picks up a clean mug
+      "Driver.PutAOnB('Mug', 'Sink')",                       // Driver places mug in sink to rinse
+      "Driver.ToggleOn('CoffeeMachine')",                    // Driver turns on coffee machine to brew coffee
+      "Driver.Say('done')",
+      "Commander.Say('thank you that\\'s everything')"
+    ]
+  },
+  {
+    "file": "../all_game_files/a9e62b795c603884_c7d6.game.json",
+    "actions": [
+      "Driver.Say('Hello, what am I doing today')",
+      "Commander.Say('hi')",
+      "Commander.Say('get the cloth from the bin beside the toilet')",
+      "Driver.Say('Certainly.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the bin
+      "Driver.Move(0.75)",                                  // Driver moves to the bin location
+      "Commander.Say('and put in the bathtub')",
+      "Commander.Say('look down')",
+      "Driver.Say('Searching.')",
+      "Driver.Move(1.25)",                                  // Driver moves to locate cloth inside bin
+      "Driver.PickUp('Cloth')",                             // Driver picks up the cloth
+      "Driver.PutAOnB('Cloth', 'Floor')",                    // REMOVE: placing on floor is incorrect
+      "Driver.Say('Wrong.')",
+      "Driver.TurnLeft(270.0)",                             // Driver turns to face the bathtub
+      "Driver.Move(2.0)",                                   // Driver moves to bathtub
+      "Driver.PutAOnB('Cloth', 'Bathtub')"                   // Driver places cloth in bathtub
+    ]
+  },
+  {
+    "file": "../all_game_files/40cc5749c7d59c06_2288.game.json",
+    "actions": [
+      "Driver.Say('how can i help today?')",
+      "Driver.Move(1.0)",                                   // Driver moves toward the pot
+      "Commander.Say('i\\'d lke my plant watered')",
+      "Driver.Say('Certainly.')",
+      "Driver.Move(1.25)",                                  // Driver moves closer to the pot
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the plant
+      "Driver.Move(0.5)",                                   // Driver moves to the plant
+      "Driver.Say('Gathering pot.')",
+      "Driver.PickUp('Pot')",                               // Driver picks up pot containing water
+      "Driver.PutAOnB('Pot', 'Floor')",                      // REMOVE: placing pot on floor is not part of watering
+      "Driver.Say('Wrong.')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",         // Driver pours water from pot into plant
+      "Driver.Say('found a pot with water')",
+      "Driver.Say('should be done')",
+      "Commander.Say('thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/abf1ba0f0c8908f8_37ed.game.json",
+    "actions": [
+      "Commander.Say('hello')",
+      "Commander.Say('Are you ready for your task?')",
+      "Commander.Say('Please put the watch on the coffee table.')",
+      "Commander.Say('Please respond')",
+      "Driver.Say('Certainly.')",
+      "Driver.Move(1.0)",                                   // Driver moves toward the watch location
+      "Driver.PickUp('Watch')",                             // Driver picks up a watch (likely the wrong one)
+      "Driver.PutAOnB('Watch', 'Shelf')",                    // REMOVE: placing on shelf is incorrect
+      "Driver.Say('Wrong spot.')",
+      "Driver.Move(2.0)",                                   // Driver moves to locate correct watch
+      "Driver.PickUp('Watch2')",                            // Driver picks up the correct watch
+      "Driver.TurnLeft(180.0)",                              // Driver turns to face coffee table
+      "Driver.PutAOnB('Watch2', 'Floor')",                    // REMOVE: placing on floor is incorrect
+      "Driver.Say('That is not right.')",
+      "Driver.PutAOnB('Watch2', 'CoffeeTable')",             // Driver places watch on coffee table
+      "Commander.Say('Thank you task finished')"
+    ]
+  },
+  {
+    "file": "../all_game_files/0a743cc844d97d87_5037.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Commander.Say('please put all pepper shakers in a cabinet')",
+      "Driver.Move(0.5)",                                   // Driver moves toward the salt shaker
+      "Driver.PickUp('SaltShaker')",                        // Driver picks up salt shaker (wrong object)
+      "Driver.PutAOnB('SaltShaker', 'Counter')",             // REMOVE: placing salt shaker here is incorrect
+      "Driver.Say('Oops, wrong object.')",
+      "Driver.Open('Cabinet')",                             // Driver opens cabinet to place items
+      "Driver.PickUp('PepperShaker')",                       // Driver picks up a pepper shaker
+      "Driver.PutAOnB('PepperShaker', 'Shelf')",             // REMOVE: placing on shelf is incorrect
+      "Driver.Say('Not there.')",
+      "Driver.PickUp('PepperShaker')",                       // Driver re-picks pepper shaker
+      "Driver.PutAOnB('PepperShaker', 'Cabinet')",           // Driver places pepper shaker into cabinet
+      "Driver.ToggleOff('Microwave')",                       // REMOVE: turning off microwave is irrelevant
+      "Driver.Say('Let me check the microwave first.')",
+      "Driver.Open('Microwave')",                            // Driver opens the microwave to check inside
+      "Driver.PickUp('Potato')",                             // REMOVE: picking up potato is irrelevant
+      "Driver.PutAOnB('Potato', 'Table')",                    // REMOVE: placing potato here is not needed
+      "Driver.Say('This is not needed right now.')",
+      "Driver.PickUp('Potato')",                             // REMOVE: picking up potato again is irrelevant
+      "Driver.PutAOnB('Potato', 'CounterTop')",               // REMOVE: placing potato on countertop is irrelevant
+      "Driver.PickUp('PepperShaker2')",                       // Driver picks up second pepper shaker
+      "Driver.PutAOnB('PepperShaker2', 'Floor')",             // REMOVE: placing on floor is incorrect
+      "Driver.Say('Wrong placement.')",
+      "Driver.PickUp('PepperShaker2')",                       // Driver re-picks second pepper shaker
+      "Driver.PutAOnB('PepperShaker2', 'Cabinet')"            // Driver places second pepper shaker into cabinet
+    ]
+  },
+  {
+    "file": "../all_game_files/f22a5e8ac037a420_1c14.game.json",
+    "actions": [
+      "Driver.Say('Hello. What is my first task?')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face nearby items
+      "Driver.Move(1.0)",                                   // Driver moves to inspect tools
+      "Driver.Say('Let me see what we have.')",
+      "Driver.PickUp('Spoon')",                             // Driver picks up spoon initially
+      "Driver.PutAOnB('Spoon', 'Table')",                    // REMOVE: spoon is not needed to make coffee
+      "Driver.Say('Not the right tool.')",
+      "Commander.Say('Please put coffee in mug')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face mugs
+      "Driver.PickUp('Mug')",                               // Driver picks up a mug
+      "Driver.Say('There are many mugs.')",
+      "Driver.PutAOnB('Mug', 'Shelf')",                      // REMOVE: placing on shelf is incorrect
+      "Driver.Say('No, that is not right.')",
+      "Driver.PickUp('Mug')",                               // Driver picks up correct mug
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face coffee machine
+      "Driver.Move(2.25)",                                  // Driver moves to coffee machine
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",              // Driver places mug under coffee machine
+      "Driver.ToggleOn('CoffeeMachine')",                   // Driver starts the coffee machine
+      "Driver.Say('Coffee is brewing')",
+      "Commander.Say('awesome we are done!')",
+      "Driver.Say('Great!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/dda9ea220761cc52_5a27.game.json",
+    "actions": [
+      "Driver.Say('my task')",
+      "Commander.Say('boil a potato')",
+      "Driver.Say('where is it')",
+      "Commander.Say('on the chair')",
+      "Driver.Move(1.0)",                                   // Driver moves to the chair
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the chair
+      "Driver.PickUp('Book')",                              // REMOVE: picking up book is irrelevant
+      "Driver.PutAOnB('Book', 'Shelf')",                     // REMOVE: placing book on shelf is irrelevant
+      "Driver.Say('Wrong item.')",
+      "Driver.PickUp('Potato')",                            // Driver picks up the potato
+      "Driver.Say('Found it.')",
+      "Driver.TurnLeft(360.0)",                             // REMOVE: full rotation has no net effect
+      "Driver.Move(6.25)",                                  // Driver moves to stove area
+      "Driver.PutAOnB('Potato', 'Table')",                   // REMOVE: placing on table is not part of boiling
+      "Driver.Say('That is not the pot.')",
+      "Driver.PickUp('Potato')",                            // Driver picks up the potato again
+      "Driver.PutAOnB('Potato', 'Pot')",                     // Driver places potato into pot
+      "Driver.ToggleOn('StoveKnob')",                        // Driver turns on stove to boil potato
+      "Commander.Say('done')",
+      "Driver.Say('Extra stove knob?')",
+      "Driver.ToggleOn('StoveKnob2')"                        // REMOVE: second stove knob activation is irrelevant
+    ]
+  },
+  {
+    "file": "../all_game_files/843b6119ebcac0fb_cced.game.json",
+    "actions": [
+      "Commander.Say('please can you put the tomato i nthe fridge?')",
+      "Commander.Say('they are in the middle unite next to the fridge')",
+      "Driver.TurnLeft(270.0)",                             // Driver turns to face the middle unit
+      "Driver.Say('Looking for vegetables.')",
+      "Driver.Move(1.0)",                                   // Driver moves to the middle unit
+      "Driver.PickUp('Apple')",                             // REMOVE: picking up apple is not the tomato
+      "Driver.PutAOnB('Apple', 'Table')",                    // REMOVE: placing apple on table is incorrect
+      "Driver.Say('Not the tomato.')",
+      "Driver.Open('Cabinet')",                             // Driver opens the first cabinet
+      "Driver.Move(-0.25)",                                 // Driver adjusts position slightly
+      "Driver.Open('Cabinet2')",                            // Driver opens the second cabinet
+      "Driver.Say('Checking second cabinet.')",
+      "Driver.Open('Cabinet3')",                            // Driver opens the third cabinet
+      "Commander.Say('the next one')",
+      "Driver.PickUp('Tomato')",                            // Driver picks up the tomato
+      "Driver.Say('Got it.')",
+      "Driver.PutAOnB('Tomato', 'CounterTop')",              // Driver places tomato on countertop
+      "Driver.Say('Almost there.')",
+      "Driver.Open('Fridge')",                              // Driver opens the fridge
+      "Driver.PutAOnB('Tomato', 'Fridge')",                  // Driver places tomato in fridge
+      "Commander.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/10416a22a004208e_48f4.game.json",
+    "actions": [
+      "Driver.Say('hi, what can i do for you?')",
+      "Commander.Say('just need my plant watered please')",
+      "Driver.Say('sure')",
+      "Driver.Move(0.75)",                                  // Driver moves toward the stove where the container is
+      "Driver.Say('i see a container with water on the stove')",
+      "Driver.PickUp('Bowl')",                              // Driver picks up the bowl
+      "Driver.PutAOnB('Bowl', 'Shelf')",                     // REMOVE: placing bowl on shelf is incorrect
+      "Driver.Say('Not the right container.')",
+      "Driver.PickUp('Pot')",                               // Driver picks up the correct pot
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the plant
+      "Driver.Move(1.0)",                                   // Driver moves to the plant
+      "Driver.Say('Getting closer.')",
+      "Commander.Say('nice that should work')",
+      "Driver.Say('Pouring now.')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",         // Driver pours water into plant
+      "Driver.Say('Water delivered.')",
+      "Driver.Say('doen')",
+      "Driver.Say('done')",
+      "Commander.Say('sweet')"
+    ]
+  },
+  {
+    "file": "../all_game_files/fbd409f780c2bf3b_cd58.game.json",
+    "actions": [
+      "Commander.Say('hi, put all remote controls on the coffee tables')",
+      "Commander.Say('on a coffee table sorry')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the initial area
+      "Driver.Move(0.25)",                                  // Driver moves to search for remotes
+      "Driver.Say('Where are the remotes?')",
+      "Driver.PickUp('Magazine')",                          // REMOVE: magazine is not a remote
+      "Driver.PutAOnB('Magazine', 'Shelf')",                 // REMOVE: placing magazine is irrelevant
+      "Driver.Say('Not a remote.')",
+      "Driver.Move(2.25)",                                  // Driver moves toward the sofa
+      "Commander.Say('one is on the single sofa seat')",
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face the sofa
+      "Driver.Say('Approaching sofa.')",
+      "Driver.Move(1.0)",                                   // Driver moves to the sofa
+      "Driver.PickUp('RemoteControl')",                      // Driver picks up the remote
+      "Driver.Say('Holding the remote.')",
+      "Driver.PutAOnB('RemoteControl', 'Shelf')",            // REMOVE: placing on shelf is wrong
+      "Driver.Say('Wrong table.')",
+      "Driver.PickUp('RemoteControl')",                      // Driver picks remote again to correct placement
+      "Driver.TurnLeft(180.0)",                             // Driver turns to face coffee table
+      "Driver.PutAOnB('RemoteControl', 'CoffeeTable')",      // Driver places remote on coffee table
+      "Driver.TurnLeft(90.0)"                                // Driver turns afterward
+    ]
+  },
+  {
+    "file": "../all_game_files/39c72b597c0254a0_4822.game.json",
+    "actions": [
+      "Driver.Say('my task today')",
+      "Commander.Say('The plant needs to be watered')",
+      "Driver.Say('Checking plan.')",
+      "Driver.TurnLeft(270.0)",                             // Driver turns to face the plant area
+      "Driver.Move(4.75)",                                  // Driver moves to the table
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the table directly
+      "Driver.Say('Where is the plant?')",
+      "Commander.Say('The plant is on the table')",
+      "Driver.Say('Found the table.')",
+      "Driver.Move(0.5)",                                   // Driver moves onto the table
+      "Driver.PutAOnB('Vase', 'Floor')",                     // REMOVE: placing vase on floor is incorrect
+      "Driver.Say('Not the pot.')",
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the pot
+      "Driver.PickUp('Pot')",                               // Driver picks up the pot containing water
+      "Driver.TurnLeft(90.0)",                              // Driver turns to face the plant
+      "Driver.Move(4.0)",                                   // Driver moves to the plant
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",          // Driver pours water into plant
+      "Commander.Say('All done!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/823f0fe4bda8607c_34d8.game.json",
+    "actions": [
+      "Driver.Say('hey how can I help?')",
+      "Commander.Say('clean the plate please')",
+      "Driver.Say('Certainly.')",
+      "Driver.Move(1.0)",                                   // Driver moves toward the sink area
+      "Driver.Say('Searching for plate.')",
+      "Driver.PickUp('Cup')",                               // REMOVE: cup is not the plate
+      "Driver.PutAOnB('Cup', 'Table')",                      // REMOVE: placing cup is irrelevant
+      "Driver.Say('Not the plate.')",
+      "Driver.PickUp('Plate')",                             // Driver picks up the plate
+      "Driver.TurnLeft(180.0)",                              // Driver turns to face the sink
+      "Driver.Move(2.0)",                                   // Driver moves to the sink
+      "Driver.TurnLeft(90.0)",                              // Driver turns to align over sink
+      "Driver.Move(0.25)",                                  // Driver moves closer to sink basin
+      "Driver.Say('Positioning over sink.')",
+      "Driver.TurnLeft(180.0)",                              // Driver turns to correct orientation
+      "Driver.PutAOnB('Plate', 'Sink')",                     // Driver places plate in sink to rinse
+      "Driver.Say('Rinsing now.')",
+      "Driver.ToggleOn('Faucet')",                          // Driver turns on faucet to rinse plate
+      "Driver.Say('Water flowing.')",
+      "Driver.ToggleOff('Faucet')",                         // Driver turns off faucet after rinsing
+      "Commander.Say('thanks')"
+    ]
+  }
+]

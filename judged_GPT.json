@@ -1,0 +1,191 @@
+[
+    {
+      "file": "../all_game_files/7d2a79f43e605c36_1657.game.json",
+      "feedback": "Rating: '5', the sequence cleanly picks up the newspaper and places it on the table with no extra actions."
+    },
+    {
+      "file": "../all_game_files/17dfd631e1080392_3a62.game.json",
+      "feedback": "Rating: '5', the actions efficiently water the plant using the cup with proper movement and no redundant steps."
+    },
+    {
+      "file": "../all_game_files/c3aabf431a64e351_e223.game.json",
+      "feedback": "Rating: '5', the coffee preparation sequence is succinct and logically ordered."
+    },
+    {
+      "file": "../all_game_files/9fbb55df14428a20_0e79.game.json",
+      "feedback": "Rating: '5', the alarm clock is correctly picked up and placed on the bed without any extraneous moves."
+    },
+    {
+      "file": "../all_game_files/c5348c2abd0cef19_071b.game.json",
+      "feedback": "Rating: '5', the remote control placement is straightforward and all steps align with the goal."
+    },
+    {
+      "file": "../all_game_files/beeccf5b8cbc54a6_f57c.game.json",
+      "feedback": "Rating: '5', the plant watering sequence is efficient with no unnecessary actions."
+    },
+    {
+      "file": "../all_game_files/326b070baeb3ee6e_04ff.game.json",
+      "feedback": "Rating: '4', although the game‐ending commands are generally correct, a couple of movement actions were flagged as redundant."
+    },
+    {
+      "file": "../all_game_files/eadfce2fe0336a57_3092.game.json",
+      "feedback": "Rating: '5', the sequence to water the plant using the bowl is complete and logically sound."
+    },
+    {
+      "file": "../all_game_files/23cf6855a2d08080_e337.game.json",
+      "feedback": "Rating: '5', the sports equipment (tennis racket) is handled in a clear and efficient manner."
+    },
+    {
+      "file": "../all_game_files/a53339c1decca356_4b31.game.json",
+      "feedback": "Rating: '5', the steps to move the mug from the table to the sink are exactly as required."
+    },
+    {
+      "file": "../all_game_files/c0d9aee4cadda787_a318.game.json",
+      "feedback": "Rating: '5', watering the plant via the bowl is executed in a perfect order with no extraneous actions."
+    },
+    {
+      "file": "../all_game_files/d8c17cf24263b0a2_58b6.game.json",
+      "feedback": "Rating: '5', the potato boiling sequence is direct and efficient."
+    },
+    {
+      "file": "../all_game_files/9e4ae1fcf15944c9_dc14.game.json",
+      "feedback": "Rating: '5', the newspaper is correctly moved to the sofa with all actions properly aligned."
+    },
+    {
+      "file": "../all_game_files/8d187c2be57b026b_4e41.game.json",
+      "feedback": "Rating: '5', the plant watering steps using the mug are in perfect order."
+    },
+    {
+      "file": "../all_game_files/0ecae89ae3864ab4_1615.game.json",
+      "feedback": "Rating: '5', the remote control placement onto the coffee table is efficient and correct."
+    },
+    {
+      "file": "../all_game_files/63c8f47335dc1243_2503.game.json",
+      "feedback": "Rating: '5', filling a mug with coffee is performed perfectly with clear movement and action order."
+    },
+    {
+      "file": "../all_game_files/ce2be720bcbc9aed_ad06.game.json",
+      "feedback": "Rating: '5', even though a pot pickup and placement are flagged for removal, the relevant actions remain intact and the overall sequence is logical."
+    },
+    {
+      "file": "../all_game_files/3d9705361c99978d_6749.game.json",
+      "feedback": "Rating: '5', the cloth rinsing sequence is correct with unnecessary faucet toggles appropriately marked for removal."
+    },
+    {
+      "file": "../all_game_files/1d99b9a4ce291a24_1ad3.game.json",
+      "feedback": "Rating: '5', boiling a potato is executed in a proper order with no extra actions."
+    },
+    {
+      "file": "../all_game_files/9bf72a7a9d0e098a_64ad.game.json",
+      "feedback": "Rating: '5', the cleaning of the cloth near the sink is completed efficiently."
+    },
+    {
+      "file": "../all_game_files/17dfd631e1080392_4482.game.json",
+      "feedback": "Rating: '5', the watering task using the cup is perfectly aligned with the goal."
+    },
+    {
+      "file": "../all_game_files/5a86bb695fceb5d9_692c.game.json",
+      "feedback": "Rating: '5', the remote control is moved to the sofa with clear and correct actions."
+    },
+    {
+      "file": "../all_game_files/102a3c062caa480b_476d.game.json",
+      "feedback": "Rating: '5', the pencil placement on the desk is executed in a flawless sequence."
+    },
+    {
+      "file": "../all_game_files/ca9d0996ab052ec0_3ed0.game.json",
+      "feedback": "Rating: '5', the sequence for watering the plant is clear and uses the appropriate tool without redundant steps."
+    },
+    {
+      "file": "../all_game_files/cf56f28793f5e133_fbd4.game.json",
+      "feedback": "Rating: '5', the watering sequence using a bowl is efficient with all unnecessary steps removed."
+    },
+    {
+      "file": "../all_game_files/487aad20c3aa3368_d798.game.json",
+      "feedback": "Rating: '5', cleaning the coffee mug is handled perfectly with appropriate use of faucet toggling."
+    },
+    {
+      "file": "../all_game_files/7337be5c30b1b5d1_874c.game.json",
+      "feedback": "Rating: '5', the plant watering sequence using the bowl is executed efficiently with logical turns and movements."
+    },
+    {
+      "file": "../all_game_files/97b884a0f892799f_ca33.game.json",
+      "feedback": "Rating: '4', the sequence for cleaning the mug is mostly correct but includes a redundant mug pick‐up flagged for removal."
+    },
+    {
+      "file": "../all_game_files/01dff4073c2a53e6_47a5.game.json",
+      "feedback": "Rating: '5', placing the alarm clock on furniture is carried out exactly as required."
+    },
+    {
+      "file": "../all_game_files/66f67a99f785f66f_3bf9.game.json",
+      "feedback": "Rating: '5', watering the plant using the mug is straightforward and free of extraneous actions."
+    },
+    {
+      "file": "../all_game_files/362002a475895b4e_ec4d.game.json",
+      "feedback": "Rating: '5', cleaning the mug is done correctly though it ends with a redundant mug pick‐up that is marked for removal."
+    },
+    {
+      "file": "../all_game_files/dcd7c65e1f7c5c35_d8e3.game.json",
+      "feedback": "Rating: '5', the coffee preparation sequence is efficient and follows the logical steps perfectly."
+    },
+    {
+      "file": "../all_game_files/128e184d9477800b_9b48.game.json",
+      "feedback": "Rating: '5', the sequence to clean the cloth on the tub is clear and complete."
+    },
+    {
+      "file": "../all_game_files/52cd9e926f6e4767_af84.game.json",
+      "feedback": "Rating: '5', placing the saltshaker in the cabinet is handled with the correct opening, movement, and placement actions."
+    },
+    {
+      "file": "../all_game_files/c5216e91776571e9_fb71.game.json",
+      "feedback": "Rating: '5', the watering of the plant using the bowl is performed with precise and efficient actions."
+    },
+    {
+      "file": "../all_game_files/19f512eab5786ae2_fbce.game.json",
+      "feedback": "Rating: '5', the book is picked up and placed on the desk with clear and logical movements."
+    },
+    {
+      "file": "../all_game_files/0fcf6c2d73c72ff2_b53b.game.json",
+      "feedback": "Rating: '5', the spoon placement into the sink is executed perfectly without any extra steps."
+    },
+    {
+      "file": "../all_game_files/2abef7c08f5a1bd1_0abd.game.json",
+      "feedback": "Rating: '5', the remote control is placed on a side table correctly with all necessary turns and moves."
+    },
+    {
+      "file": "../all_game_files/76346edc156ce83e_31fc.game.json",
+      "feedback": "Rating: '5', the cup cleaning sequence (rinse in the sink) is efficiently done after redundant faucet toggling is removed."
+    },
+    {
+      "file": "../all_game_files/1d99b9a4ce291a24_720c.game.json",
+      "feedback": "Rating: '5', boiling the potato on the black table is performed in a straightforward and efficient sequence."
+    },
+    {
+      "file": "../all_game_files/40cc5749c7d59c06_5c97.game.json",
+      "feedback": "Rating: '5', the plant watering actions are precise and all moves align with the intended goal."
+    },
+    {
+      "file": "../all_game_files/ff6766847495298f_1549.game.json",
+      "feedback": "Rating: '5', the sequence for placing all newspapers on a sofa is well ordered with no extraneous actions."
+    },
+    {
+      "file": "../all_game_files/beeccf5b8cbc54a6_fe3a.game.json",
+      "feedback": "Rating: '5', the watering sequence is clean and efficient with unnecessary toggles removed."
+    },
+    {
+      "file": "../all_game_files/66f67a99f785f66f_80c3.game.json",
+      "feedback": "Rating: '5', the plant watering steps are perfectly executed with logical movements and no redundancy."
+    },
+    {
+      "file": "../all_game_files/20df70c5052d0ef2_2978.game.json",
+      "feedback": "Rating: '5', watering the plant using the cup is executed in a concise and efficient manner."
+    },
+    {
+      "file": "../all_game_files/19bc78054d050bf3_7afc.game.json",
+      "feedback": "Rating: '5', the watch placement on the coffee table is carried out clearly with no extraneous steps."
+    },
+    {
+      "file": "../all_game_files/8526975435605a6b_62cd.game.json",
+      "feedback": "Rating: '5', placing the laptop on the bed is done flawlessly with correct turns and moves."
+    }
+  ]
+  

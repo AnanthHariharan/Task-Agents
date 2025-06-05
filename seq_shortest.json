@@ -1,0 +1,1545 @@
+[
+  {
+    "file": "../all_game_files/7d2a79f43e605c36_1657.game.json",
+    "actions": [
+      "Commander.Say('I need the newspaper to be placed on a single table.')",
+      "Driver.Say('what should i do')",
+      "Commander.Say('I need the newspaper placed on a single table.')",
+      "Driver.PickUp('Newspaper')",
+      "Driver.PutAOnB('Newspaper', 'CoffeeTable')"
+    ]
+  },
+  {
+    "file": "../all_game_files/17dfd631e1080392_3a62.game.json",
+    "actions": [
+      "Commander.Say('please water the plant')",
+      "Driver.Say('hello how can I help you?')",
+      "Commander.Say('please water the plant')",
+      "Driver.Move(3.0)",
+      "Driver.PickUp('Cup')",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant')"
+    ]
+  },
+  {
+    "file": "../all_game_files/c3aabf431a64e351_e223.game.json",
+    "actions": [
+      "Driver.Say('What shall I do today?')",
+      "Commander.Say('prepare coffee')",
+      "Driver.Move(0.25)",
+      "Driver.PickUp('Mug')",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",
+      "Driver.ToggleOn('CoffeeMachine')",
+      "Commander.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/9fbb55df14428a20_0e79.game.json",
+    "actions": [
+      "Driver.Say('How may I assist you today?')",
+      "Driver.TurnLeft(180.0)",
+      "Commander.Say('can you put my alarm clock on my bed for me please')",
+      "Driver.Move(1.75)",
+      "Driver.PickUp('AlarmClock')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PutAOnB('AlarmClock', 'Bed')"
+    ]
+  },
+  {
+    "file": "../all_game_files/c5348c2abd0cef19_071b.game.json",
+    "actions": [
+      "Driver.Say('what is the task today please')",
+      "Commander.Say('Put the remote on the single coffee table. The remote is on the couch.')",
+      "Driver.Move(0.5)",
+      "Driver.PickUp('RemoteControl')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.PutAOnB('RemoteControl', 'CoffeeTable')",
+      "Commander.Say('Finish')"
+    ]
+  },
+  {
+    "file": "../all_game_files/beeccf5b8cbc54a6_f57c.game.json",
+    "actions": [
+      "Driver.Say('how can i help')",
+      "Commander.Say('water the plant please')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(1.0)",
+      "Driver.TurnLeft(360.0)",
+      "Driver.PickUp('Pot')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')"
+    ]
+  },
+  {
+    "file": "../all_game_files/326b070baeb3ee6e_04ff.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what should I do?')",
+      "Driver.Move(-1.0)",
+      "Commander.Say('The game is finished.')",
+      "Commander.Say('There is nothing else to complete.')",
+      "Commander.Say('Thanks!')",
+      "Driver.Move(0.75)"
+    ]
+  },
+  {
+    "file": "../all_game_files/eadfce2fe0336a57_3092.game.json",
+    "actions": [
+      "Commander.Say('water the plant')",
+      "Driver.Move(3.0)",
+      "Driver.PickUp('Bowl')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(0.75)",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant')",
+      "Driver.Say('then')"
+    ]
+  },
+  {
+    "file": "../all_game_files/23cf6855a2d08080_e337.game.json",
+    "actions": [
+      "Driver.Say('what should i do')",
+      "Driver.TurnLeft(270.0)",
+      "Commander.Say('Put all sports equipment on any bed. It is beside the bed on the floor by the basket.')",
+      "Driver.Move(0.25)",
+      "Driver.PickUp('TennisRacket')",
+      "Driver.PutAOnB('TennisRacket', 'Bed')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('That\\'s it. Thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/a53339c1decca356_4b31.game.json",
+    "actions": [
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('please take the mug from the table and put it in the sink')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Mug')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(2.5)",
+      "Driver.PutAOnB('Mug', 'Sink')",
+      "Commander.Say('that is all. thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/c0d9aee4cadda787_a318.game.json",
+    "actions": [
+      "Driver.Say('What can I help you with today?')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('i\\'d like my plant watered')",
+      "Driver.Move(0.5)",
+      "Driver.PickUp('Bowl')",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant')",
+      "Driver.Say('anything else?')",
+      "Commander.Say('thank you!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/d8c17cf24263b0a2_58b6.game.json",
+    "actions": [
+      "Driver.Say('hello')",
+      "Driver.Say('what is my task')",
+      "Commander.Say('boil a potato')",
+      "Commander.Say('its next to the stove')",
+      "Driver.PickUp('Potato')",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.Say('done')",
+      "Commander.Say('thats it')"
+    ]
+  },
+  {
+    "file": "../all_game_files/9e4ae1fcf15944c9_dc14.game.json",
+    "actions": [
+      "Driver.Say('what can i do for ya?')",
+      "Driver.TurnLeft(180.0)",
+      "Commander.Say('please put the newspaper onto a single sofa')",
+      "Driver.Move(1.5)",
+      "Driver.PickUp('Newspaper')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PutAOnB('Newspaper', 'Sofa')",
+      "Driver.TurnLeft(90.0)"
+    ]
+  },
+  {
+    "file": "../all_game_files/8d187c2be57b026b_4e41.game.json",
+    "actions": [
+      "Driver.Say('hey how can I help?')",
+      "Commander.Say('water the plant please')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(0.75)",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PickUp('Mug')",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant')",
+      "Driver.TurnLeft(180.0)"
+    ]
+  },
+  {
+    "file": "../all_game_files/0ecae89ae3864ab4_1615.game.json",
+    "actions": [
+      "Driver.Say('what should i do?')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('hi..put all remotes on one coffe table')",
+      "Driver.Move(0.75)",
+      "Driver.PickUp('RemoteControl')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PutAOnB('RemoteControl', 'CoffeeTable')",
+      "Commander.Say('done thank')"
+    ]
+  },
+  {
+    "file": "../all_game_files/63c8f47335dc1243_2503.game.json",
+    "actions": [
+      "Commander.Say('Can you fill a mug with coffee for me')",
+      "Commander.Say('There is a clean one on the white table')",
+      "Driver.Move(0.25)",
+      "Driver.PickUp('Mug')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(2.25)",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",
+      "Driver.ToggleOn('CoffeeMachine')"
+    ]
+  },
+  {
+    "file": "../all_game_files/487aad20c3aa3368_d798.game.json",
+    "actions": [
+      "Driver.Say('my task')",
+      "Commander.Say('clean the coffee mug')",
+      "Commander.Say('it is inside the coffee maker')",
+      "Driver.Move(4.25)",
+      "Driver.PickUp('Mug')",
+      "Driver.PourFromAIntoB('Mug', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')",
+      "Commander.Say('done, thanks!!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/7337be5c30b1b5d1_874c.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Driver.Move(1.25)",
+      "Driver.PickUp('Bowl')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('You need to water the plant.')",
+      "Driver.Move(0.75)",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant')",
+      "Driver.Say('Anything else?')",
+      "Commander.Say('Great work. All tasks complete. Thank you.')"
+    ]
+  },
+  {
+    "file": "../all_game_files/97b884a0f892799f_ca33.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('clean the mug')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.5)",
+      "Driver.PickUp('Mug')",
+      "Driver.PutAOnB('Mug', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.PickUp('Mug')"
+    ]
+  },
+  {
+    "file": "../all_game_files/01dff4073c2a53e6_47a5.game.json",
+    "actions": [
+      "Commander.Say('HI!')",
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('I need the alarm clock on a furniture.')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('AlarmClock')",
+      "Driver.PutAOnB('AlarmClock', 'Desk')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Say('Done')",
+      "Commander.Say('perfect')"
+    ]
+  },
+  {
+    "file": "../all_game_files/66f67a99f785f66f_3bf9.game.json",
+    "actions": [
+      "Driver.Say('what can I assist with?')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.25)",
+      "Commander.Say('i need my plant watered')",
+      "Driver.Move(0.5)",
+      "Driver.PickUp('Mug')",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant')",
+      "Driver.Say('all set!')",
+      "Commander.Say('thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/362002a475895b4e_ec4d.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('Clean the mug')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(0.5)",
+      "Commander.Say('mug is in coffee maker')",
+      "Driver.PickUp('Mug')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PutAOnB('Mug', 'Sink')",
+      "Driver.PickUp('Mug')"
+    ]
+  },
+  {
+    "file": "../all_game_files/17dfd631e1080392_4482.game.json",
+    "actions": [
+      "Driver.Say('hi, what can I do for you?')",
+      "Driver.TurnLeft(270.0)",
+      "Commander.Say('please water the plan')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.75)",
+      "Commander.Say('plant*')",
+      "Driver.Move(2.5)",
+      "Driver.PickUp('Cup')",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant')"
+    ]
+  },
+  {
+    "file": "../all_game_files/5a86bb695fceb5d9_692c.game.json",
+    "actions": [
+      "Driver.Say('Hi, what should I do today?')",
+      "Commander.Say('get the remote control ftom the table and put onto a chair')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('computer table')",
+      "Driver.Move(2.0)",
+      "Driver.PickUp('RemoteControl')",
+      "Driver.Move(-0.5)",
+      "Driver.PutAOnB('RemoteControl', 'Sofa')",
+      "Driver.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/102a3c062caa480b_476d.game.json",
+    "actions": [
+      "Driver.Say('What am i doing today')",
+      "Commander.Say('hello')",
+      "Commander.Say('get the pencil from the black bin and place onto a furniture')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(1.5)",
+      "Driver.Move(0.25)",
+      "Driver.PickUp('Pencil')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PutAOnB('Pencil', 'Desk')"
+    ]
+  },
+  {
+    "file": "../all_game_files/ca9d0996ab052ec0_3ed0.game.json",
+    "actions": [
+      "Driver.Say('what can i do today')",
+      "Driver.Move(0.75)",
+      "Commander.Say('Hello, water the plant')",
+      "Driver.TurnLeft(270.0)",
+      "Commander.Say('Use a bowl or cup to get water from the sink')",
+      "Driver.PickUp('Pot')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Driver.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/cf56f28793f5e133_fbd4.game.json",
+    "actions": [
+      "Driver.Say('hi what should I do today?')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(0.5)",
+      "Driver.PickUp('Bowl')",
+      "Commander.Say('water the plant')",
+      "Driver.Move(4.25)",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant')",
+      "Driver.Say('ok what should I do next?')",
+      "Commander.Say('great job')"
+    ]
+  },
+  {
+    "file": "../all_game_files/1d99b9a4ce291a24_1ad3.game.json",
+    "actions": [
+      "Driver.Say('Hi. What should I do today?')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('hi, please boil a potato')",
+      "Driver.Move(0.75)",
+      "Driver.PickUp('Potato')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.75)",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.ToggleOn('StoveKnob')",
+      "Commander.Say('cool')"
+    ]
+  },
+  {
+    "file": "../all_game_files/9bf72a7a9d0e098a_64ad.game.json",
+    "actions": [
+      "Driver.Say('Hi! What can I do?')",
+      "Commander.Say('wash the cloth near the sink pls')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.25)",
+      "Driver.PickUp('Cloth')",
+      "Driver.PutAOnB('Cloth', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PickUp('Cloth')",
+      "Driver.Say('Done.')"
+    ]
+  },
+  {
+    "file": "../all_game_files/af49e2061b576182_7eeb.game.json",
+    "actions": [
+      "Driver.Say('how can i help you?')",
+      "Commander.Say('water my plants!')",
+      "Driver.Say('aww ok')",
+      "Driver.Move(1.25)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.75)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Pot')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Driver.TurnLeft(90.0)"
+    ]
+  },
+  {
+    "file": "../all_game_files/b4a09fb079903901_63da.game.json",
+    "actions": [
+      "Driver.Say('hello')",
+      "Commander.Say('Good day!')",
+      "Driver.Say('task please')",
+      "Commander.Say('Today I\\'d like you to prepare a cup of coffee.')",
+      "Driver.PickUp('Mug')",
+      "Driver.Move(0.5)",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",
+      "Driver.ToggleOn('CoffeeMachine')",
+      "Driver.Say('done')",
+      "Commander.Say('Thank you.')"
+    ]
+  },
+  {
+    "file": "../all_game_files/f8331b1c6c5f716a_7c99.game.json",
+    "actions": [
+      "Driver.Say('whats first?')",
+      "Commander.Say('boil the potato in a bowl of water')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(0.5)",
+      "Commander.Say('potato is on the cabinet beside the basin')",
+      "Driver.PickUp('Potato')",
+      "Driver.Move(2.25)",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.ToggleOn('StoveKnob')",
+      "Commander.Say('done thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/8526975435605a6b_62cd.game.json",
+    "actions": [
+      "Driver.Say('What can  I do today')",
+      "Commander.Say('all laptops on same bed')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(0.75)",
+      "Driver.PickUp('Laptop')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(-0.75)",
+      "Driver.Move(0.5)",
+      "Driver.PutAOnB('Laptop', 'Bed')",
+      "Commander.Say('great')"
+    ]
+  },
+  {
+    "file": "../all_game_files/52cd9e926f6e4767_af84.game.json",
+    "actions": [
+      "Commander.Say('can you place the saltshaker into a cabinet')",
+      "Driver.Move(0.5)",
+      "Driver.PickUp('SaltShaker')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('the salt shaker is on the table')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(-0.25)",
+      "Driver.Open('Cabinet')",
+      "Driver.PutAOnB('SaltShaker', 'Cabinet')",
+      "Commander.Say('thats great')"
+    ]
+  },
+  {
+    "file": "../all_game_files/c5216e91776571e9_fb71.game.json",
+    "actions": [
+      "Driver.Say('what can i do for you?')",
+      "Driver.Move(1.5)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(2.25)",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('water my plant please')",
+      "Driver.Say('sure thing')",
+      "Driver.PickUp('Bowl')",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant')",
+      "Driver.Say('done!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/19f512eab5786ae2_fbce.game.json",
+    "actions": [
+      "Driver.Say('what should i do')",
+      "Commander.Say('Hello. Please grab the book on the armchair and place it on the desk.')",
+      "Driver.TurnLeft(180.0)",
+      "Commander.Say('The arm chair is behind you to the right')",
+      "Driver.Move(2.0)",
+      "Driver.PickUp('Book')",
+      "Commander.Say('Place it on the desk to your left')",
+      "Driver.PutAOnB('Book', 'Desk')",
+      "Commander.Say('Great...All tasks complete')",
+      "Commander.Say('Thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/ce2be720bcbc9aed_ad06.game.json",
+    "actions": [
+      "Driver.Say('what can i help with?')",
+      "Commander.Say('water the plant please!')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.25)",
+      "Driver.Say('sure thing')",
+      "Driver.Move(1.75)",
+      "Driver.PickUp('Pot')",
+      "Driver.PutAOnB('Pot', 'CounterTop')",
+      "Driver.PickUp('Cup')",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant')"
+    ]
+  },
+  {
+    "file": "../all_game_files/3d9705361c99978d_6749.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Driver.TurnLeft(450.0)",
+      "Commander.Say('Please rinse the cloth with water.')",
+      "Driver.Move(0.75)",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PickUp('Cloth')",
+      "Driver.PutAOnB('Cloth', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Commander.Say('thank you')",
+      "Driver.ToggleOff('Faucet')"
+    ]
+  },
+  {
+    "file": "../all_game_files/beeccf5b8cbc54a6_68fc.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Commander.Say('i need my plant watered')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Say('ok')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(0.75)",
+      "Driver.PickUp('Pot')",
+      "Driver.Say('found a pot with water and see the plant, watering now')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Commander.Say('thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/9f562303eaada44a_6928.game.json",
+    "actions": [
+      "Driver.Say('first task?')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('water plant please')",
+      "Driver.Move(5.0)",
+      "Driver.PickUp('Pot')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(2.75)",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Commander.Say('done thanks')",
+      "Driver.Say('next')"
+    ]
+  },
+  {
+    "file": "../all_game_files/ab2a07eab2b458d7_783e.game.json",
+    "actions": [
+      "Driver.Say('how can i help?')",
+      "Commander.Say('can you prepare coffee in a clean mug')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(0.5)",
+      "Driver.PickUp('Mug')",
+      "Driver.PourFromAIntoB('Mug', 'Sink')",
+      "Driver.Move(0.25)",
+      "Driver.ToggleOn('CoffeeMachine')",
+      "Driver.Say('done')",
+      "Driver.Say('is that all?')",
+      "Commander.Say('thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/19e060787ca1778e_505b.game.json",
+    "actions": [
+      "Commander.Say('Please clean all the cloths')",
+      "Commander.Say('there is one next to the sink')",
+      "Driver.Say('do you mean put all the dirty clothing in the sink?')",
+      "Commander.Say('rinse them with water in the sink')",
+      "Driver.Say('thank you')",
+      "Driver.Move(1.25)",
+      "Driver.PickUp('Cloth')",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PutAOnB('Cloth', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')"
+    ]
+  },
+  {
+    "file": "../all_game_files/7b4616a527911de2_a403.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Commander.Say('Hi, today I\\'d like my cloth placed in the bathtub please')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(0.75)",
+      "Driver.PickUp('Cloth')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.75)",
+      "Driver.Move(0.5)",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PutAOnB('Cloth', 'Bathtub')",
+      "Commander.Say('great work, thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/45ad98d344984bbe_e1c4.game.json",
+    "actions": [
+      "Driver.Say('h')",
+      "Driver.Say('i')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(2.0)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.5)",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')",
+      "Commander.Say('clean all cloths')",
+      "Driver.PickUp('Cloth')",
+      "Driver.PutAOnB('Cloth', 'CounterTop')"
+    ]
+  },
+  {
+    "file": "../all_game_files/8b69018b22bfca92_82c3.game.json",
+    "actions": [
+      "Driver.Say('what are we doing today')",
+      "Driver.TurnLeft(180.0)",
+      "Commander.Say('The pillow needs to be put on the sofa')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.PickUp('Pillow')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(0.5)",
+      "Driver.PutAOnB('Pillow', 'Sofa')",
+      "Driver.Say('ok done')",
+      "Commander.Say('Great job! We are done')",
+      "Driver.Say('sweet')"
+    ]
+  },
+  {
+    "file": "../all_game_files/049700c23d1cbaa7_4a52.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('hi')",
+      "Commander.Say('clean a dirty plate')",
+      "Driver.Move(3.5)",
+      "Driver.PickUp('Plate')",
+      "Driver.PutAOnB('Plate', 'Sink')",
+      "Commander.Say('plate is next to sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.Say('done')",
+      "Commander.Say('good job')"
+    ]
+  },
+  {
+    "file": "../all_game_files/77c96ff01a8a2406_195e.game.json",
+    "actions": [
+      "Driver.Say('how can i help')",
+      "Commander.Say('could you please prepare coffee in a clean mug')",
+      "Driver.TurnLeft(360.0)",
+      "Driver.Move(0.75)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Mug')",
+      "Driver.TurnLeft(360.0)",
+      "Driver.PourFromAIntoB('Mug', 'Pot')",
+      "Driver.ToggleOn('CoffeeMachine')",
+      "Driver.Say('all done')",
+      "Commander.Say('all done thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/f30954c822c3dec6_0d4c.game.json",
+    "actions": [
+      "Driver.Say('what can i help with?')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('water my plant please!')",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('Mug')",
+      "Driver.Say('sure thing')",
+      "Driver.Say('i found a mug on the table with water in it')",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant')",
+      "Commander.Say('Go for it!')",
+      "Driver.Say('done')",
+      "Commander.Say('thank you!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/17dfd631e1080392_748e.game.json",
+    "actions": [
+      "Driver.Say('hi how can I help?')",
+      "Driver.TurnLeft(450.0)",
+      "Driver.Move(0.5)",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('can you water the plant')",
+      "Driver.Move(2.0)",
+      "Driver.Say('ok')",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('Cup')",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant')",
+      "Driver.Say('good?')"
+    ]
+  },
+  {
+    "file": "../all_game_files/b46fbc7a46058c5b.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('please take the fork next the coffee machine and place it in the sink')",
+      "Driver.Move(1.5)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Fork')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(2.0)",
+      "Driver.PutAOnB('Fork', 'Sink')",
+      "Commander.Say('Thank you')",
+      "Driver.Say('Ive placed the fork is in the sink')"
+    ]
+  },
+  {
+    "file": "../all_game_files/5fceb114ca1450e6_f30d.game.json",
+    "actions": [
+      "Commander.Say('hi')",
+      "Commander.Say('we are boiling a potato')",
+      "Driver.Say('What should I do tody?')",
+      "Commander.Say('potato on counter right of sink')",
+      "Driver.Move(0.75)",
+      "Driver.PickUp('Potato')",
+      "Driver.Move(0.25)",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.PickUp('Pot')",
+      "Driver.PutAOnB('Pot', 'StoveBurner')",
+      "Commander.Say('cool')"
+    ]
+  },
+  {
+    "file": "../all_game_files/8d6b8732d5394f80_6459.game.json",
+    "actions": [
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(2.0)",
+      "Commander.Say('prepare coffee in a clean mug')",
+      "Driver.Say('What should I do')",
+      "Driver.PickUp('Mug')",
+      "Driver.PutAOnB('Mug', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PickUp('Mug')",
+      "Driver.PourFromAIntoB('Mug', 'Sink')",
+      "Driver.Say('Done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/fb7144d9ca162d20_c245.game.json",
+    "actions": [
+      "Driver.Say('Hello. What is my task?')",
+      "Commander.Say('Hi, please pick up the watch')",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('Watch')",
+      "Driver.Move(-0.75)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.25)",
+      "Commander.Say('and place on chair')",
+      "Driver.Say('Watch is picked up. What is next task?')",
+      "Driver.PutAOnB('Watch', 'ArmChair')",
+      "Commander.Say('place on chair')"
+    ]
+  },
+  {
+    "file": "../all_game_files/12a9943280200b82_1c95.game.json",
+    "actions": [
+      "Driver.Say('hello')",
+      "Driver.Say('what are my tasks')",
+      "Commander.Say('hi')",
+      "Commander.Say('put egg on dining table')",
+      "Commander.Say('egg is next to stove')",
+      "Driver.Move(0.5)",
+      "Driver.PickUp('Egg')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(1.25)",
+      "Driver.PutAOnB('Egg', 'DiningTable')",
+      "Commander.Say('good job')"
+    ]
+  },
+  {
+    "file": "../all_game_files/3e658e951fc5985a_b525.game.json",
+    "actions": [
+      "Driver.Say('whats first')",
+      "Commander.Say('get the creditcard that is inside a box next to the chair')",
+      "Commander.Say('and place on the desk')",
+      "Driver.Move(0.75)",
+      "Driver.TurnLeft(360.0)",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('CreditCard')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(1.0)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PutAOnB('CreditCard', 'Desk')"
+    ]
+  },
+  {
+    "file": "../all_game_files/4c98e155c32cdc6f_7acc.game.json",
+    "actions": [
+      "Driver.Say('What shall I do today?')",
+      "Commander.Say('Hi. Please fill a mug with coffee.  There is one in the sink.')",
+      "Driver.Move(0.25)",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PickUp('Mug')",
+      "Driver.PourFromAIntoB('Mug', 'Sink')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.ToggleOff('CoffeeMachine')",
+      "Driver.PickUp('Mug')",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",
+      "Driver.ToggleOn('CoffeeMachine')"
+    ]
+  },
+  {
+    "file": "../all_game_files/dcd7c65e1f7c5c35_d8e3.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('prepare coffee')",
+      "Driver.PickUp('Mug')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(1.75)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.75)",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",
+      "Driver.ToggleOn('CoffeeMachine')",
+      "Driver.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/128e184d9477800b_9b48.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Open('Cabinet')",
+      "Commander.Say('please clean the cloth on the tub')",
+      "Driver.Open('Cabinet2')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('Cloth')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.5)",
+      "Driver.PutAOnB('Cloth', 'Sink')"
+    ]
+  },
+  {
+    "file": "../all_game_files/26b752b6faa2d377_05fa.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Driver.TurnLeft(180.0)",
+      "Commander.Say('please prepare coffe in a mug, the mug is on the counter top')",
+      "Driver.Move(2.25)",
+      "Driver.PickUp('Mug')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(2.75)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.0)",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",
+      "Commander.Say('thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/8340b584c6d7a610_1810.game.json",
+    "actions": [
+      "Driver.Say('How can I help today?')",
+      "Commander.Say('there is a cup in the blue bin, can you put it in a cabinet for me please')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(5.25)",
+      "Driver.PickUp('Cup')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Say('Which cabinet should I put it in?')",
+      "Driver.Move(1.0)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Open('Cabinet')",
+      "Driver.PutAOnB('Cup', 'Cabinet')"
+    ]
+  },
+  {
+    "file": "../all_game_files/01ced2f37b0b68f6_2ad6.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what can I do?')",
+      "Commander.Say('hi, please boil a potato')",
+      "Driver.Move(2.0)",
+      "Driver.PickUp('Potato')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(2.0)",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.ToggleOn('StoveKnob')",
+      "Driver.Say('done')",
+      "Commander.Say('c00')"
+    ]
+  },
+  {
+    "file": "../all_game_files/ad2e4eb0b24a5940_9c9d.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.75)",
+      "Commander.Say('water the plant')",
+      "Driver.Move(2.0)",
+      "Driver.PickUp('Mug')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(1.0)",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant')",
+      "Driver.Say('Done')",
+      "Commander.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/0fcf6c2d73c72ff2_b53b.game.json",
+    "actions": [
+      "Driver.Say('Hello! I am here. What is my task.')",
+      "Commander.Say('Hello!')",
+      "Commander.Say('You need to put the SPOON into the SINK.')",
+      "Driver.Move(2.0)",
+      "Driver.PickUp('Spoon')",
+      "Driver.Move(0.25)",
+      "Driver.PutAOnB('Spoon', 'Sink')",
+      "Commander.Say('Perfect!')",
+      "Driver.Say('Thank you!')",
+      "Commander.Say('great job!')",
+      "Commander.Say('Task is complete!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/2abef7c08f5a1bd1_0abd.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Commander.Say('Put all remote controls on any side table')",
+      "Driver.Say('where can I find it?')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(4.0)",
+      "Driver.PickUp('RemoteControl')",
+      "Commander.Say('there is on on the white chair by the laptop')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PutAOnB('RemoteControl', 'SideTable')",
+      "Driver.Say('is this completed>')",
+      "Commander.Say('yes')"
+    ]
+  },
+  {
+    "file": "../all_game_files/76346edc156ce83e_31fc.game.json",
+    "actions": [
+      "Driver.Say('whats next')",
+      "Commander.Say('Clean the cup by the sink. It is dirty.')",
+      "Driver.Navigation()",
+      "Driver.TurnLeft(180.0)",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PickUp('Cup')",
+      "Driver.PutAOnB('Cup', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PickUp('Cup')",
+      "Commander.Say('That\\'s all. Good job')"
+    ]
+  },
+  {
+    "file": "../all_game_files/1d99b9a4ce291a24_720c.game.json",
+    "actions": [
+      "Commander.Say('hi')",
+      "Driver.Say('Hi, first task?')",
+      "Commander.Say('boil the potato on the black table')",
+      "Driver.Move(0.25)",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(0.25)",
+      "Driver.PickUp('Potato')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(2.5)",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.Say('next')"
+    ]
+  },
+  {
+    "file": "../all_game_files/40cc5749c7d59c06_5c97.game.json",
+    "actions": [
+      "Driver.Say('what can I help you with?')",
+      "Commander.Say('i\\'d like my plant watered')",
+      "Driver.Move(1.25)",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('Pot')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(1.25)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Driver.Say('all set?')"
+    ]
+  },
+  {
+    "file": "../all_game_files/ff6766847495298f_1549.game.json",
+    "actions": [
+      "Commander.Say('Can you place all newspapers on a sofa for me')",
+      "Commander.Say('the newspaper is on the coffee table')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(4.0)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.75)",
+      "Driver.PickUp('Newspaper')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.75)",
+      "Driver.PutAOnB('Newspaper', 'Sofa')",
+      "Driver.Say('Done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/beeccf5b8cbc54a6_fe3a.game.json",
+    "actions": [
+      "Driver.TurnLeft(180.0)",
+      "Driver.Say('hi, how can i help today?')",
+      "Commander.Say('water the plant please')",
+      "Driver.Say('sure')",
+      "Driver.Move(0.75)",
+      "Driver.TurnLeft(360.0)",
+      "Driver.Move(0.25)",
+      "Driver.PickUp('Pot')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Driver.Say('all set!')",
+      "Commander.Say('thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/66f67a99f785f66f_80c3.game.json",
+    "actions": [
+      "Driver.Say('what would you like?')",
+      "Driver.TurnLeft(180.0)",
+      "Commander.Say('i need my plant watered')",
+      "Driver.Say('yes of course')",
+      "Driver.Move(1.5)",
+      "Driver.PickUp('Bowl')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(3.75)",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant')",
+      "Driver.Say('all set?')",
+      "Commander.Say('thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/20df70c5052d0ef2_2978.game.json",
+    "actions": [
+      "Driver.Say('how can i help you?')",
+      "Commander.Say('just water the plant')",
+      "Driver.Say('sure')",
+      "Driver.Move(1.0)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Cup')",
+      "Driver.Say('i founda cup with water by the stove')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(1.75)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant')",
+      "Commander.Say('all set thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/19bc78054d050bf3_7afc.game.json",
+    "actions": [
+      "Commander.Say('Hi, can you make coffee?')",
+      "Driver.Say('hello how can I help?')",
+      "Commander.Say('a mug is in the right cupboard under the sink')",
+      "Driver.Say('sure thank you')",
+      "Driver.Move(0.75)",
+      "Driver.Open('Cabinet')",
+      "Driver.PickUp('Mug')",
+      "Driver.Move(0.25)",
+      "Driver.PourFromAIntoB('Mug', 'Sink')",
+      "Driver.ToggleOn('CoffeeMachine')",
+      "Driver.Say('coffee is done')",
+      "Commander.Say('all good, thanks!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/cf56f28793f5e133_9c70.game.json",
+    "actions": [
+      "Driver.TurnLeft(180.0)",
+      "Driver.Say('how can I help?')",
+      "Commander.Say('can you water the plant?')",
+      "Driver.Move(0.5)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Say('sure')",
+      "Driver.Move(2.25)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(4.5)",
+      "Driver.PickUp('Mug')",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant')",
+      "Driver.TurnLeft(180.0)"
+    ]
+  },
+  {
+    "file": "../all_game_files/f33b56cdba2cb217_4758.game.json",
+    "actions": [
+      "Driver.Say('how can i help?')",
+      "Driver.TurnLeft(270.0)",
+      "Commander.Say('can you please make coffee?')",
+      "Commander.Say('a mug is in the sink')",
+      "Driver.Say('of course')",
+      "Driver.Move(3.25)",
+      "Driver.PickUp('Mug')",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",
+      "Driver.ToggleOff('CoffeeMachine')",
+      "Commander.Say('all good, thanks!')",
+      "Driver.ToggleOn('CoffeeMachine')",
+      "Driver.PickUp('Mug')"
+    ]
+  },
+  {
+    "file": "../all_game_files/01ced2f37b0b68f6_0042.game.json",
+    "actions": [
+      "Driver.Say('how can i help today?')",
+      "Commander.Say('can you boil a potato?')",
+      "Driver.Move(1.5)",
+      "Driver.PickUp('Potato')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(2.5)",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.PickUp('Pot')",
+      "Driver.PutAOnB('Pot', 'StoveBurner')",
+      "Driver.ToggleOn('StoveKnob')",
+      "Driver.Say('done')",
+      "Commander.Say('thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/68030be4329479ac_032a.game.json",
+    "actions": [
+      "Driver.Say('what can i do today')",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('Please boil the potato located by the sink')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Potato')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(4.75)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.Say('done')",
+      "Driver.Say('next?')",
+      "Commander.Say('Great job!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/13fa23347f23a35c_a81c.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Commander.Say('please take the scrub brush next to the toilet and place it on the counter top')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(1.25)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('ScrubBrush')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(0.75)",
+      "Driver.PutAOnB('ScrubBrush', 'CounterTop')",
+      "Driver.Say('anything else?')",
+      "Commander.Say('That is all. Thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/4e893adaff5699af_ab4f.game.json",
+    "actions": [
+      "Driver.Say('hi, what should i do today?')",
+      "Commander.Say('put book on bed\\'')",
+      "Driver.Say('where can i find the book')",
+      "Commander.Say('book is on the table')",
+      "Driver.Say('ok')",
+      "Driver.Move(1.25)",
+      "Driver.PickUp('Book')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(0.5)",
+      "Driver.PutAOnB('Book', 'Bed')",
+      "Driver.Say('done')",
+      "Commander.Say('thank you')"
+    ]
+  },
+  {
+    "file": "../all_game_files/23af5a3818b1a1b2_89c0.game.json",
+    "actions": [
+      "Driver.Say('What shall I do today?')",
+      "Commander.Say('We need to clean a cloth with water.')",
+      "Driver.TurnLeft(180.0)",
+      "Commander.Say('The cloth is in the lower right hand cabinet at the sink')",
+      "Driver.Open('Cabinet')",
+      "Driver.Move(0.25)",
+      "Driver.PickUp('Cloth')",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PutAOnB('Cloth', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')",
+      "Commander.Say('Great work. Tasks complete. Thank you.')"
+    ]
+  },
+  {
+    "file": "../all_game_files/b8f22271faff678f_dce6.game.json",
+    "actions": [
+      "Driver.Say('hello, what is my task?')",
+      "Driver.TurnLeft(180.0)",
+      "Commander.Say('water the plant')",
+      "Driver.Move(1.25)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Cup')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(0.75)",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant')",
+      "Commander.Say('bring some water in a container')",
+      "Driver.Say('done')",
+      "Commander.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/39c72b597c0254a0_b4de.game.json",
+    "actions": [
+      "Driver.Say('hi, how can I help you?')",
+      "Driver.TurnLeft(450.0)",
+      "Driver.Move(5.25)",
+      "Driver.TurnLeft(270.0)",
+      "Commander.Say('please water plant')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Pot')",
+      "Driver.Move(1.0)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.25)",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Driver.Say('ok?')"
+    ]
+  },
+  {
+    "file": "../all_game_files/96f5c7fccc368de7_dfe9.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what to do')",
+      "Commander.Say('hi')",
+      "Commander.Say('put the book on the bed onto a desk')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.5)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Book')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.25)",
+      "Driver.TurnLeft(180.0)",
+      "Driver.PutAOnB('Book', 'Desk')"
+    ]
+  },
+  {
+    "file": "../all_game_files/4a82a50d27933bd2_d698.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('clean all plates')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.PickUp('Plate')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(1.25)",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PutAOnB('Plate', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.Say('how many?')",
+      "Commander.Say('i will finish thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/f2f6723ebab1e6a2_bfeb.game.json",
+    "actions": [
+      "Commander.Say('Hello, water the plant')",
+      "Driver.Move(1.5)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.25)",
+      "Driver.PickUp('Bowl')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.25)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.5)",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant')",
+      "Commander.Say('Good job')",
+      "Driver.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/68030be4329479ac_40a1.game.json",
+    "actions": [
+      "Driver.Say('what can i do today')",
+      "Driver.TurnLeft(270.0)",
+      "Commander.Say('Hello, please boil a potato.')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.PickUp('Potato')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(4.75)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.5)",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.Say('done')",
+      "Commander.Say('Great job. The task is complete.')"
+    ]
+  },
+  {
+    "file": "../all_game_files/cae57f0a642448c5_ac99.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what should I do?')",
+      "Driver.Move(-2.75)",
+      "Commander.Say('hello. Rinse dirty cloth with water.')",
+      "Driver.Move(-1.25)",
+      "Driver.PickUp('Cloth')",
+      "Driver.Move(0.75)",
+      "Driver.PutAOnB('Cloth', 'Sink')",
+      "Driver.Move(-0.5)",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.PickUp('Cloth')",
+      "Commander.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/03882bf65cc08dd2_d4cd.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('hello')",
+      "Driver.Say('Hi')",
+      "Commander.Say('please rinse the plate in the sink')",
+      "Driver.Navigation()",
+      "Driver.Move(0.5)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.5)",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.Say('Done')",
+      "Commander.Say('well done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/a4e0351b007787d8_3b07.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('Hello! The cup is dirty, rinse it with water.')",
+      "Driver.Move(3.5)",
+      "Driver.PickUp('Mug')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(3.0)",
+      "Driver.PutAOnB('Mug', 'CounterTop')",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PickUp('Mug')",
+      "Driver.PutAOnB('Mug', 'Sink')",
+      "Commander.Say('Perfect! Thats it!')",
+      "Driver.ToggleOn('Faucet')"
+    ]
+  },
+  {
+    "file": "../all_game_files/fa88fcb69514bd64_1cc0.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Driver.TurnLeft(180.0)",
+      "Commander.Say('please prepare a coffee in a clean mug')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(3.25)",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')",
+      "Driver.PickUp('Mug')",
+      "Driver.PourFromAIntoB('Mug', 'Sink')",
+      "Driver.ToggleOn('CoffeeMachine')",
+      "Driver.Say('done')",
+      "Commander.Say('thank you that\\'s everything')"
+    ]
+  },
+  {
+    "file": "../all_game_files/a9e62b795c603884_c7d6.game.json",
+    "actions": [
+      "Driver.Say('Hello, what am I doing today')",
+      "Commander.Say('hi')",
+      "Commander.Say('get the cloth from the bin beside the toilet')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.75)",
+      "Commander.Say('and put in the bathtub')",
+      "Commander.Say('look down')",
+      "Driver.Move(1.25)",
+      "Driver.PickUp('Cloth')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(2.0)",
+      "Driver.PutAOnB('Cloth', 'Bathtub')"
+    ]
+  },
+  {
+    "file": "../all_game_files/40cc5749c7d59c06_2288.game.json",
+    "actions": [
+      "Driver.Say('how can i help today?')",
+      "Driver.Move(1.0)",
+      "Commander.Say('i\\'d lke my plant watered')",
+      "Driver.Move(1.25)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.5)",
+      "Driver.Say('sure')",
+      "Driver.PickUp('Pot')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Driver.Say('found a pot with water')",
+      "Driver.Say('should be done')",
+      "Commander.Say('thanks')"
+    ]
+  },
+  {
+    "file": "../all_game_files/abf1ba0f0c8908f8_37ed.game.json",
+    "actions": [
+      "Commander.Say('hello')",
+      "Commander.Say('Are you ready for your task?')",
+      "Commander.Say('Please put the watch on the coffee table.')",
+      "Commander.Say('Please respond')",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('Watch')",
+      "Driver.PutAOnB('Watch', 'CoffeeTable')",
+      "Driver.Move(2.0)",
+      "Driver.PickUp('Watch2')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.PutAOnB('Watch2', 'CoffeeTable')",
+      "Commander.Say('Thank you task finished')"
+    ]
+  },
+  {
+    "file": "../all_game_files/0a743cc844d97d87_5037.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Commander.Say('please put all pepper shakers in a cabinet')",
+      "Driver.Move(0.5)",
+      "Driver.Open('Cabinet')",
+      "Driver.PickUp('PepperShaker')",
+      "Driver.PutAOnB('PepperShaker', 'Cabinet')",
+      "Driver.ToggleOff('Microwave')",
+      "Driver.Open('Microwave')",
+      "Driver.PickUp('Potato')",
+      "Driver.PutAOnB('Potato', 'CounterTop')",
+      "Driver.PickUp('PepperShaker2')",
+      "Driver.PutAOnB('PepperShaker2', 'Cabinet')"
+    ]
+  },
+  {
+    "file": "../all_game_files/f22a5e8ac037a420_1c14.game.json",
+    "actions": [
+      "Driver.Say('Hello. What is my first task?')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.0)",
+      "Commander.Say('Please put coffee in mug')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Mug')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(2.25)",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine')",
+      "Driver.ToggleOn('CoffeeMachine')",
+      "Driver.Say('Coffee is done')",
+      "Commander.Say('awesome we are done!')",
+      "Driver.Say('Great!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/dda9ea220761cc52_5a27.game.json",
+    "actions": [
+      "Driver.Say('my task')",
+      "Commander.Say('boil a potato')",
+      "Driver.Say('where is it')",
+      "Commander.Say('on the chair')",
+      "Driver.Move(1.0)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Potato')",
+      "Driver.TurnLeft(360.0)",
+      "Driver.Move(6.25)",
+      "Driver.PutAOnB('Potato', 'Pot')",
+      "Driver.ToggleOn('StoveKnob')",
+      "Commander.Say('done')",
+      "Driver.ToggleOn('StoveKnob2')"
+    ]
+  },
+  {
+    "file": "../all_game_files/843b6119ebcac0fb_cced.game.json",
+    "actions": [
+      "Commander.Say('please can you put the tomato i nthe fridge?')",
+      "Commander.Say('they are in the middle unite next to the fridge')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(1.0)",
+      "Driver.Open('Cabinet')",
+      "Driver.Move(-0.25)",
+      "Driver.Open('Cabinet2')",
+      "Driver.Open('Cabinet3')",
+      "Commander.Say('the next one')",
+      "Driver.PickUp('Tomato')",
+      "Driver.Open('Fridge')",
+      "Driver.PutAOnB('Tomato', 'Fridge')",
+      "Commander.Say('done')"
+    ]
+  },
+  {
+    "file": "../all_game_files/10416a22a004208e_48f4.game.json",
+    "actions": [
+      "Driver.Say('hi, what can i do for you?')",
+      "Commander.Say('just need my plant watered please')",
+      "Driver.Say('sure')",
+      "Driver.Move(0.75)",
+      "Driver.Say('i see a container with water on the stove')",
+      "Driver.PickUp('Pot')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(1.0)",
+      "Commander.Say('nice that should work')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Driver.Say('doen')",
+      "Driver.Say('done')",
+      "Commander.Say('sweet')"
+    ]
+  },
+  {
+    "file": "../all_game_files/fbd409f780c2bf3b_cd58.game.json",
+    "actions": [
+      "Commander.Say('hi, put all remote controls on the coffee tables')",
+      "Commander.Say('on a coffee table sorry')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.25)",
+      "Driver.Say('Where are the remotes?')",
+      "Driver.Move(2.25)",
+      "Commander.Say('one is on the single sofa seat')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('RemoteControl')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.PutAOnB('RemoteControl', 'CoffeeTable')",
+      "Driver.TurnLeft(90.0)"
+    ]
+  },
+  {
+    "file": "../all_game_files/39c72b597c0254a0_4822.game.json",
+    "actions": [
+      "Driver.Say('my task today')",
+      "Commander.Say('The plant needs to be watered')",
+      "Driver.TurnLeft(270.0)",
+      "Driver.Move(4.75)",
+      "Driver.TurnLeft(90.0)",
+      "Commander.Say('The plant is on the table')",
+      "Driver.Move(0.5)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.PickUp('Pot')",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(4.0)",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant')",
+      "Commander.Say('All done!')"
+    ]
+  },
+  {
+    "file": "../all_game_files/823f0fe4bda8607c_34d8.game.json",
+    "actions": [
+      "Driver.Say('hey how can I help?')",
+      "Commander.Say('clean the plate please')",
+      "Driver.Move(1.0)",
+      "Driver.PickUp('Plate')",
+      "Driver.TurnLeft(180.0)",
+      "Driver.Move(2.0)",
+      "Driver.TurnLeft(90.0)",
+      "Driver.Move(0.25)",
+      "Driver.TurnLeft(180.0)",
+      "Driver.PutAOnB('Plate', 'Sink')",
+      "Driver.ToggleOn('Faucet')",
+      "Driver.ToggleOff('Faucet')",
+      "Commander.Say('thanks')"
+    ]
+  }
+]
