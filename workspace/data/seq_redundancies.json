@@ -31,11 +31,8 @@
       "Driver.PickUp('Vase')",
       "Driver.PourFromAIntoB('Vase', 'HousePlant')",
       "Driver.PutAOnB('Vase', 'CounterTop')",
-      "Driver.Say('Rechecking cropping.')",
       "Driver.Move(1.0)",
-      "Driver.PickUp('Cup')",
-      "Driver.TurnLeft(180.0)",
-      "Driver.PourFromAIntoB('Cup', 'HousePlant')"
+      "Driver.PickUp('Cup')"
     ]
   },
   {
@@ -43,7 +40,7 @@
     "actions": [
       "Driver.Say('What shall I do today?')",
       "Commander.Say('prepare coffee')",
-      "Driver.Say('Certainly, let me organise things.')",
+      "Driver.Say('Certainly, let me organize things.')",
       "Driver.Move(0.25)",
       "Driver.PickUp('Spoon')",
       "Driver.PutAOnB('Spoon', 'Drawer')",
@@ -72,8 +69,6 @@
       "Driver.Move(1.25)",
       "Driver.PickUp('AlarmClock')",
       "Driver.TurnLeft(90.0)",
-      "Driver.PutAOnB('AlarmClock', 'Chair')",
-      "Driver.Say('That does not seem right.')",
       "Driver.PickUp('AlarmClock')",
       "Driver.Move(0.5)",
       "Driver.TurnLeft(90.0)",
@@ -165,12 +160,7 @@
       "Driver.Move(0.25)",
       "Driver.PickUp('TennisRacket')",
       "Driver.PutAOnB('TennisRacket', 'Footstool')",
-      "Driver.Say('Incorrect placement.')",
-      "Driver.PickUp('TennisRacket')",
-      "Driver.TurnLeft(90.0)",
-      "Driver.PutAOnB('TennisRacket', 'Bed')",
-      "Driver.TurnLeft(90.0)",
-      "Commander.Say('That\\'s it. Thanks')"
+      "Driver.Say('Incorrect placement.')"
     ]
   },
   {
@@ -218,10 +208,7 @@
       "Driver.PickUp('Potato')",
       "Driver.PutAOnB('Potato', 'Table')",
       "Driver.Say('That placement is off task.')",
-      "Driver.PickUp('Potato')",
-      "Driver.PutAOnB('Potato', 'Pot')",
-      "Driver.Say('done')",
-      "Commander.Say('thats it')"
+      "Driver.PickUp('Potato')"
     ]
   },
   {
@@ -237,7 +224,6 @@
       "Driver.Say('Incorrect.')",
       "Driver.PickUp('Newspaper')",
       "Driver.TurnLeft(90.0)",
-      "Driver.PutAOnB('Newspaper', 'Sofa')",
       "Driver.TurnLeft(90.0)"
     ]
   },
@@ -851,17 +837,7 @@
     "actions": [
       "Driver.Say('how can i help')",
       "Commander.Say('could you please prepare coffee in a clean mug')",
-      "Driver.Say('Certainly.')",
-      "Driver.TurnLeft(360.0)",
-      "Driver.Move(0.75)",
-      "Driver.TurnLeft(90.0)",
-      "Driver.PickUp('Mug')",
-      "Driver.PutAOnB('Mug', 'Desk')",
-      "Driver.Say('Wrong.')",
-      "Driver.PutAOnB('Mug', 'Pot')",
-      "Driver.ToggleOn('CoffeeMachine')",
-      "Driver.Say('all done')",
-      "Commander.Say('all done thank you')"
+      "Driver.Say('Certainly.')"
     ]
   },
   {
@@ -897,10 +873,7 @@
       "Driver.Move(1.0)",
       "Driver.PickUp('Cup')",
       "Driver.PutAOnB('Cup', 'Counter')",
-      "Driver.Say('Wrong.')",
-      "Driver.PickUp('Cup')",
-      "Driver.PourFromAIntoB('Cup', 'HousePlant')",
-      "Driver.Say('good?')"
+      "Driver.Say('Wrong.')"
     ]
   },
   {
@@ -993,12 +966,7 @@
       "Driver.Move(0.5)",
       "Driver.PickUp('Egg')",
       "Driver.PutAOnB('Egg', 'Plate')",
-      "Driver.Say('Incorrect.')",
-      "Driver.PickUp('Egg')",
-      "Driver.TurnLeft(180.0)",
-      "Driver.Move(1.25)",
-      "Driver.PutAOnB('Egg', 'DiningTable')",
-      "Commander.Say('good job')"
+      "Driver.Say('Incorrect.')"
     ]
   },
   {
@@ -1107,11 +1075,7 @@
       "Driver.PutAOnB('Cup', 'Table')",
       "Driver.Say('That is not right.')",
       "Driver.TurnLeft(180.0)",
-      "Driver.Say('Which cabinet should I put it in?')",
-      "Driver.Move(1.0)",
-      "Driver.TurnLeft(90.0)",
-      "Driver.Open('Cabinet')",
-      "Driver.PutAOnB('Cup', 'Cabinet')"
+      "Driver.Say('Which cabinet should I put it in?')"
     ]
   },
   {
@@ -1893,11 +1857,7 @@
       "Driver.PickUp('RemoteControl')",
       "Driver.Say('Holding the remote.')",
       "Driver.PutAOnB('RemoteControl', 'Shelf')",
-      "Driver.Say('Wrong table.')",
-      "Driver.PickUp('RemoteControl')",
-      "Driver.TurnLeft(180.0)",
-      "Driver.PutAOnB('RemoteControl', 'CoffeeTable')",
-      "Driver.TurnLeft(90.0)"
+      "Driver.Say('Wrong table.')"
     ]
   },
   {
