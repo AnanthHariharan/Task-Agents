@@ -1,0 +1,26 @@
+# Quick test configuration for development
+
+experiment:
+  name: "quick_test"
+  description: "Quick test with minimal samples for development"
+  
+data:
+  source_path: "data/processed/seq_shortest.json"
+  max_samples: 3
+  test_mode: true
+  
+models:
+  planners:
+    - openai_gpt4o_mini
+  
+  judges:
+    - openai_gpt4o_mini
+
+workflow:
+  max_iterations: 3
+  convergence_threshold: 1
+  
+output:
+  base_dir: "outputs/experiments/quick_tests"
+  save_intermediate: false
+  generate_visualizations: false
