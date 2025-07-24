@@ -1,0 +1,44 @@
+# Default experiment configuration
+
+experiment:
+  name: "default_multi_model_comparison"
+  description: "Default configuration for multi-model plan verification"
+  
+data:
+  source_path: "data/processed/seq_shortest.json"
+  max_samples: 10
+  test_mode: true
+  
+models:
+  planners:
+    - openai_gpt4o_mini
+    - deepseek_r1
+    - gemini_2_5_flash
+    - llama_4_scout
+  
+  judges:
+    - openai_gpt4o_mini
+    - deepseek_r1
+    - gemini_2_5_flash
+    - llama_4_scout
+
+workflow:
+  max_iterations: 5
+  convergence_threshold: 2
+  
+output:
+  base_dir: "outputs/experiments"
+  save_intermediate: true
+  generate_visualizations: true
+  
+analysis:
+  metrics:
+    - convergence_rate
+    - iteration_count
+    - execution_time
+    - action_modifications
+  
+  visualizations:
+    - heatmaps
+    - boxplots
+    - bar_charts

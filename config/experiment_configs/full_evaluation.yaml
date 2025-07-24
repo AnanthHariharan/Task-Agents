@@ -1,0 +1,52 @@
+# Full evaluation configuration for comprehensive testing
+
+experiment:
+  name: "full_multi_model_evaluation"
+  description: "Comprehensive evaluation across all model combinations"
+  
+data:
+  source_path: "data/processed/seq_shortest.json"
+  max_samples: 50
+  test_mode: false
+  
+models:
+  planners:
+    - openai_gpt4o_mini
+    - deepseek_r1
+    - gemini_2_5_flash
+    - llama_4_scout
+  
+  judges:
+    - openai_gpt4o_mini
+    - deepseek_r1
+    - gemini_2_5_flash
+    - llama_4_scout
+
+workflow:
+  max_iterations: 10
+  convergence_threshold: 3
+  
+output:
+  base_dir: "outputs/experiments/full_evaluation"
+  save_intermediate: true
+  generate_visualizations: true
+  
+analysis:
+  metrics:
+    - convergence_rate
+    - iteration_count
+    - execution_time
+    - action_modifications
+    - efficiency_score
+    - consistency_score
+  
+  visualizations:
+    - heatmaps
+    - boxplots
+    - bar_charts
+    - scatter_plots
+    - correlation_matrix
+    
+  statistical_tests:
+    - anova
+    - post_hoc_comparisons
