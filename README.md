@@ -267,14 +267,6 @@ TASK_AGENTS_CONVERGENCE_THRESHOLD=2
 - **Convergence Analysis**: Iterative workflow efficiency metrics
 - **Comparative Charts**: Cross-model performance comparisons
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ### Development Setup
 
 ```bash
@@ -290,35 +282,6 @@ black .
 # Lint code
 flake8
 ```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📋 Paper Reproduction
-
-To reproduce the exact tables from your research paper:
-
-```bash
-# Step 1: Generate performance matrices (Tables 1, 2, 3)
-python experiments/generate_performance_matrix.py --samples 50
-
-# Step 2: Copy LaTeX code from generated .tex files
-cp outputs/performance_matrices/paper_tables_*/table1.tex your_paper/
-cp outputs/performance_matrices/paper_tables_*/table2_recall.tex your_paper/
-cp outputs/performance_matrices/paper_tables_*/table3_precision.tex your_paper/
-
-# Step 3: Include in your LaTeX document
-# Add \usepackage{booktabs} to preamble
-# Include table files with \input{table1.tex}
-```
-
-### Expected Output Files
-- `table1.tex`: Judge LLM performance on raw TEACh plans
-- `table2_recall.tex`: Recall matrix for all planner-judge combinations  
-- `table3_precision.tex`: Precision matrix for all planner-judge combinations
-- `tables_summary.txt`: Human-readable performance summary
-- Raw JSON data files for further analysis
 
 ## 🙏 Acknowledgments
 
@@ -368,6 +331,10 @@ The codebase has some architectural considerations:
 - **Dataset**: [Alexa TEACh Dataset](https://github.com/alexa/teach)
 - **Issues**: Report bugs and feature requests in GitHub Issues
 - **Demo**: Run `python test_seq.py` for interactive demonstration
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
 ---
 
