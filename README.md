@@ -365,7 +365,7 @@ The codebase has some architectural considerations:
 ## 📞 Support
 
 - **Research Paper**: [Plan Verification for LLM-Based Embodied Task Completion Agents](paper/Plan_Verification.pdf)
-- **Dataset**: [Alexa TEACh Dataset](https://teach.allenai.org/)
+- **Dataset**: [Alexa TEACh Dataset](https://github.com/alexa/teach)
 - **Issues**: Report bugs and feature requests in GitHub Issues
 - **Demo**: Run `python test_seq.py` for interactive demonstration
 
