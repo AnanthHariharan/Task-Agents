@@ -1,0 +1,24 @@
+# Universal Dataset MCP Framework Requirements
+
+# Core MCP dependencies
+mcp>=0.8.0
+
+# Dataset processing
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Async support  
+asyncio-mqtt>=0.11.0
+
+# JSON/YAML processing
+pyyaml>=6.0
+
+# Optional: Enhanced dataset support
+# h5py>=3.1.0        # For HDF5 datasets
+# pillow>=8.0.0      # For image processing datasets
+# opencv-python>=4.5.0  # For computer vision datasets
+
+# Development dependencies (optional)
+pytest>=6.0.0
+black>=21.0.0
+flake8>=3.8.0
