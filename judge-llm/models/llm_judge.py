@@ -13,13 +13,15 @@ class LLMJudge(BaseJudge, LoggerMixin):
         super().__init__(name or str(provider))
         self.provider = provider
         self.system_prompt = (
-            "You are a Judge Agent for embodied AI task planning. Your role is to:\n"
-            "1. Analyze action sequences for completeness and efficiency\n"
-            "2. Annotate each action with its purpose and relevance\n"
-            "3. Identify redundant actions and mark them with #REMOVE\n"
-            "4. Identify missing actions and mark them with #MISSING\n"
-            "5. Provide clear natural language justifications for all feedback\n\n"
-            "Be thorough but fair in your analysis. Focus on task completion and efficiency."
+            "You are a Judge Agent for embodied AI task planning. Your role is to provide thoughtful, "
+            "natural language feedback on action sequences. You should:\n\n"
+            "1. Analyze each action's purpose and relevance to the goal\n"
+            "2. Explain your reasoning in clear, conversational language\n"
+            "3. Point out redundant or unnecessary actions with detailed explanations\n"
+            "4. Identify missing actions needed to complete the goal\n"
+            "5. Focus on being helpful and constructive in your feedback\n\n"
+            "Provide your feedback as natural language commentary, using #REMOVE and #MISSING tags "
+            "only when necessary for clarity. Prioritize clear explanations over rigid formatting."
         )
     
     def judge_plan(self, action_sequence: List[str], goal: str) -> Dict[str, Any]:
@@ -29,26 +31,19 @@ class LLMJudge(BaseJudge, LoggerMixin):
         actions_text = "\n".join([f"{i+1}. {action}" for i, action in enumerate(action_sequence)])
         
         prompt = (
-            f"Evaluate this action sequence for the given goal:\n\n"
+            f"Please evaluate this action sequence for achieving the following goal:\n\n"
             f"GOAL: {goal}\n\n"
             f"Action Sequence:\n{actions_text}\n\n"
-            f"For each action, provide:\n"
-            f"1. A brief annotation explaining what the action does\n"
-            f"2. Mark redundant/unnecessary actions with '#REMOVE: <reason>'\n"
-            f"3. At the end, if actions are missing, add '#MISSING: <requirements>'\n\n"
-            f"Rules for #REMOVE tags:\n"
-            f"- ToggleOff actions before any ToggleOn actions\n"
-            f"- PickUp actions for objects irrelevant to the goal\n"
-            f"- Consecutive Move/Turn actions that cancel each other\n"
-            f"- Any action that doesn't contribute to achieving the goal\n\n"
-            f"Rules for #MISSING tags:\n"
-            f"- Actions needed to complete the goal that aren't present\n"
-            f"- Safety actions (e.g., turning off devices after use)\n"
-            f"- Logical prerequisites (e.g., opening containers before accessing contents)\n\n"
-            f"Format your response as:\n"
-            f"ACTION: <action>\n"
-            f"ANNOTATION: <explanation> [#REMOVE: <reason>] OR [#MISSING: <requirement>]\n\n"
-            f"Provide feedback:"
+            f"Provide natural language feedback on this plan. For each action, explain what it does "
+            f"and whether it's necessary for the goal. Think about:\n\n"
+            f"• Are there any actions that seem unnecessary or redundant?\n"
+            f"• Are there logical inconsistencies (like turning off something that was never turned on)?\n"
+            f"• Are there missing steps needed to complete the goal?\n"
+            f"• Does the sequence flow logically from start to finish?\n\n"
+            f"Use conversational language to explain your analysis. When you identify problems, "
+            f"include #REMOVE or #MISSING tags to help categorize issues, but focus on providing "
+            f"clear explanations that a human could easily understand.\n\n"
+            f"Your feedback:"
         )
         
         response = self.provider.generate(prompt, self.system_prompt)
@@ -58,6 +53,22 @@ class LLMJudge(BaseJudge, LoggerMixin):
                          f"{len(result['missing_requirements'])} missing requirements")
         
         return result
+    
+    def get_natural_language_feedback(self, action_sequence: List[str], goal: str) -> str:
+        """Get pure natural language feedback without structured parsing"""
+        self.logger.info(f"Getting natural language feedback for goal: {goal}")
+        
+        actions_text = "\n".join([f"{i+1}. {action}" for i, action in enumerate(action_sequence)])
+        
+        prompt = (
+            f"Please provide conversational feedback on this action sequence:\n\n"
+            f"GOAL: {goal}\n\n"
+            f"Action Sequence:\n{actions_text}\n\n"
+            f"Review this plan as if you were discussing it with a colleague. Explain what works well, "
+            f"what seems problematic, and what might be missing. Be natural and thorough in your analysis."
+        )
+        
+        return self.provider.generate(prompt, self.system_prompt)
     
     def _parse_judge_response(self, response: str, original_actions: List[str]) -> Dict[str, Any]:
         """Parse the judge's response into structured feedback"""
@@ -111,11 +122,12 @@ class LLMJudge(BaseJudge, LoggerMixin):
                     missing_requirements.append(missing_req)
         
         return {
+            'natural_language_feedback': response,  # Emphasize this is the primary output
             'annotated_actions': annotated_actions,
             'remove_actions': [item for item in annotated_actions if item['remove']],
             'missing_requirements': missing_requirements,
             'has_changes': len([item for item in annotated_actions if item['remove']]) > 0 or len(missing_requirements) > 0,
-            'raw_response': response
+            'raw_response': response  # Keep for backward compatibility
         }
     
     def _extract_tag_content(self, text: str, tag: str) -> Optional[str]:
@@ -140,15 +152,14 @@ class LLMJudge(BaseJudge, LoggerMixin):
         plan2_text = "\n".join([f"{i+1}. {action}" for i, action in enumerate(plan2)])
         
         prompt = (
-            f"Compare these two action sequences for achieving the goal:\n\n"
+            f"I have two different approaches to achieving this goal and would like your analysis:\n\n"
             f"GOAL: {goal}\n\n"
             f"Plan A:\n{plan1_text}\n\n"
             f"Plan B:\n{plan2_text}\n\n"
-            f"Evaluate both plans on:\n"
-            f"1. Completeness (achieves the goal)\n"
-            f"2. Efficiency (minimal unnecessary actions)\n"
-            f"3. Logical flow (actions in correct order)\n\n"
-            f"Which plan is better and why? Provide detailed reasoning."
+            f"Please compare these plans thoughtfully. Consider their completeness, efficiency, "
+            f"and logical flow. What are the strengths and weaknesses of each approach? "
+            f"Which would you recommend and why? Explain your reasoning as if you were "
+            f"advising someone on the best way to accomplish this task."
         )
         
         response = self.provider.generate(prompt, self.system_prompt)
