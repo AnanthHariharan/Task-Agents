@@ -51,37 +51,54 @@ Task-Agents/
 ### Prerequisites
 
 - Python 3.8+
-- API keys for desired LLM providers
+- API keys for desired LLM providers (at minimum OpenAI for the demo)
 
 ### Setup
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-org/task-agents.git
-   cd task-agents
+   cd Task-Agents
    ```
 
 2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
-   # OR
-   pip install -e .
+   pip install python-dotenv openai  # Required for basic demo
    ```
 
 3. **Configure environment:**
    ```bash
-   cp .env.example .env
-   # Edit .env with your API keys
+   # Create .env file with your API keys
+   echo "OPENAI_API_KEY=your-openai-key-here" > .env
+   # Add other API keys as needed:
+   # echo "DEEPSEEK_API_KEY=your-deepseek-key" >> .env
+   # echo "GEMINI_API_KEY=your-gemini-key" >> .env
    ```
 
-4. **Prepare data:**
+4. **Prepare data (optional for demo):**
    ```bash
-   # Process raw TEACh dataset
+   # Process raw TEACh dataset (needed for full experiments)
    python scripts/data_processing/assemble_instances.py
    python scripts/data_processing/assemble_shortest.py
    ```
 
 ## 🚀 Quick Start
+
+### Try the Interactive Demo
+
+Test the complete plan verification workflow with natural language feedback:
+
+```bash
+# Run the interactive demo (works with mock data if no API key)
+python test_seq.py
+```
+
+This demo shows the complete workflow:
+1. **Goal Annotation**: Planning agent identifies the task goal
+2. **Line-by-Line Analysis**: Judge provides natural language feedback with #REMOVE/#MISSING tags  
+3. **Plan Modification**: Planning agent fixes issues based on feedback
+4. **Final Verification**: Clean, optimized action sequence
 
 ### Generate Paper Performance Tables
 
@@ -310,13 +327,48 @@ cp outputs/performance_matrices/paper_tables_*/table3_precision.tex your_paper/
 - Supports multiple state-of-the-art LLM providers
 - Includes both neural and rule-based approaches for comprehensive comparison
 
+## 🔧 Troubleshooting
+
+### Common Issues
+
+#### Import Errors
+If you encounter import errors, it's due to hyphens in directory names (`judge-llm`, `planning-agent`). The demo (`test_seq.py`) includes mock classes to work around this.
+
+**For development:**
+- Directory structure uses hyphens for organization
+- Python imports require workarounds (see `test_seq.py` for examples)
+- Use `importlib.util.spec_from_file_location()` for direct imports
+
+#### API Key Issues
+```bash
+# Make sure .env file exists and has correct format
+echo "OPENAI_API_KEY=sk-..." > .env
+
+# Verify it's loaded
+python -c "from dotenv import load_dotenv; import os; load_dotenv(); print('API Key set:', bool(os.getenv('OPENAI_API_KEY')))"
+```
+
+#### Missing Dependencies
+```bash
+# Install all required packages
+pip install python-dotenv openai deepseek-ai google-generativeai anthropic
+```
+
+### Development Notes
+
+The codebase has some architectural considerations:
+- **Directory naming**: Uses hyphens for readability but requires import workarounds
+- **Mock classes**: `test_seq.py` includes mock implementations for demos
+- **Environment loading**: Uses `python-dotenv` for `.env` file support
+- **Multi-provider support**: Abstract base classes allow switching LLM providers
+
 ## 📞 Support
 
-- **Research Paper**: Link to your published work
+- **Research Paper**: [Plan Verification for LLM-Based Embodied Task Completion Agents](paper/Plan_Verification.pdf)
 - **Dataset**: [Alexa TEACh Dataset](https://teach.allenai.org/)
-- **Issues**: Report bugs and feature requests
-- **Documentation**: Detailed API and usage documentation
+- **Issues**: Report bugs and feature requests in GitHub Issues
+- **Demo**: Run `python test_seq.py` for interactive demonstration
 
 ---
 
-*Task-Agents: Multi-model plan verification system for embodied AI research using recall/precision evaluation on the TEACh dataset.*
+*Task-Agents: Multi-model plan verification system for embodied AI research using natural language feedback and recall/precision evaluation on the TEACh dataset.*
