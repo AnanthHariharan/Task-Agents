@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-
+# Simple demo without complex imports
+#
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -18,12 +19,12 @@ sys.path.append('/Users/ananthhariharan/Documents/Research/Task-Agents/planning-
 sys.path.append('/Users/ananthhariharan/Documents/Research/Task-Agents/shared')
 
 try:
-    # Create a simple demo without the complex imports for now
+
     print("🚀 Running simplified demo (using mock responses)")
 
     class MockProvider:
         def __init__(self, **kwargs):
-            pass  # Accept any arguments but ignore them
+            pass
 
         def generate(self, prompt, system_prompt=None):
             if "annotate_goal" in prompt.lower() or "goal" in prompt.lower():
@@ -70,7 +71,7 @@ Driver.ToggleOff('CoffeeMachine')"""
 
         def judge_plan(self, actions, goal):
             response = self.provider.generate("judge plan")
-            # Parse for demo
+
             has_remove = "#REMOVE" in response
             has_missing = "#MISSING" in response
             return {
@@ -91,7 +92,6 @@ Driver.ToggleOff('CoffeeMachine')"""
             response = self.provider.generate("modify plan")
             return response.strip().split('\n')
 
-    # Use mock classes
     provider = MockProvider()
     LLMJudge = MockJudge
     LLMPlanner = MockPlanner
@@ -106,12 +106,12 @@ except Exception as e:
 def demonstrate_complete_workflow():
     """Demonstrate the complete workflow: goal annotation -> judge evaluation -> planner fixes -> final output"""
 
-    # Initialize providers and agents
+
     provider = OpenAIProvider(model_name="gpt-4o-mini")
     judge = LLMJudge(provider, name="Natural Language Judge")
     planner = LLMPlanner(provider, name="LLM Planner")
 
-    # Example action sequence with deliberate issues
+
     original_actions = [
         "Driver.Move(1.0)",
         "Driver.PickUp('Soap')",  # Irrelevant to coffee making

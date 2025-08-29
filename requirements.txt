@@ -4,6 +4,10 @@ python-dotenv>=0.19.0
 requests>=2.28.0
 google-generativeai>=0.3.0
 
+# Additional LLM providers (mentioned in documentation)
+# anthropic>=0.3.0  # For Claude models if needed
+# deepseek-ai>=1.0.0  # For DeepSeek-R1 (placeholder - actual package may vary)
+
 # Data processing and analysis
 pandas>=1.5.0
 numpy>=1.21.0

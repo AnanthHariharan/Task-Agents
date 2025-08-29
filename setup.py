@@ -26,7 +26,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/your-org/task-agents",
-    packages=find_packages(exclude=["tests*", "docs*"]),
+    packages=find_packages(exclude=["tests*", "docs*", "games*", "outputs*", "workspace*"]),
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
@@ -57,7 +57,9 @@ setup(
     entry_points={
         "console_scripts": [
             "task-agents-experiment=experiments.experiment_runner:main",
-            "task-agents-process-data=scripts.data_processing.assemble_instances:main",
+            "task-agents-evaluate=experiments.one_shot_evaluator:main", 
+            "task-agents-matrix=experiments.generate_performance_matrix:main",
+            "task-agents-demo=test_seq:main",
         ],
     },
     include_package_data=True,

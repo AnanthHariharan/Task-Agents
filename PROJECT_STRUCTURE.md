@@ -3,23 +3,24 @@
 ```
 Task-Agents/
 ├── README.md                           # Main project documentation
+├── PROJECT_STRUCTURE.md               # This file - project structure overview
 ├── requirements.txt                    # Python dependencies
 ├── setup.py                           # Package setup configuration
 ├── pyproject.toml                     # Modern Python packaging
-├── .env.example                       # Environment variables template
-├── .gitignore                         # Git ignore patterns
+├── test_seq.py                        # Interactive demo script
 │
 ├── games/                             # Raw TEACh dataset
-│   └── train/                         # Training game files
+│   └── train/                         # Training game files (~1200 files)
 │       └── *.game.json               # Individual game episodes
 │
 ├── data/                              # Processed dataset files
-│   ├── raw/                          # Raw processed data
-│   ├── processed/                    # Cleaned and structured data
-│   └── test/                         # Test datasets
+│   ├── seq_all.json                  # All processed sequences
+│   ├── seq_redundancies.json         # Sequences with redundancies
+│   └── seq_shortest.json             # Shortest action sequences
 │
 ├── shared/                           # Shared components across modules
 │   ├── __init__.py
+│   ├── dataset_adapters/             # Dataset processing adapters
 │   ├── llm_providers/               # LLM provider implementations
 │   │   ├── __init__.py
 │   │   ├── base_provider.py         # Abstract base provider
@@ -39,68 +40,62 @@ Task-Agents/
 │
 ├── planning-agent/                   # Planning agent components
 │   ├── __init__.py
-│   ├── models/                      # Planner model implementations
-│   │   ├── __init__.py
-│   │   ├── base_planner.py          # Abstract base planner
-│   │   └── llm_planner.py           # LLM-based planner
-│   ├── strategies/                  # Planning strategies
-│   │   ├── __init__.py
-│   │   ├── goal_annotator.py        # Goal identification
-│   │   ├── plan_modifier.py         # Plan modification logic
-│   │   └── action_generator.py      # Missing action generation
-│   └── factory.py                   # Planner factory
+│   ├── factory.py                   # Planner factory
+│   └── models/                      # Planner model implementations
+│       ├── __init__.py
+│       ├── base_planner.py          # Abstract base planner
+│       ├── llm_planner.py           # LLM-based planner
+│       └── rule_based_planner.py    # Rule-based planner
 │
 ├── judge-llm/                       # Judge LLM components
 │   ├── __init__.py
-│   ├── models/                      # Judge model implementations
-│   │   ├── __init__.py
-│   │   ├── base_judge.py            # Abstract base judge
-│   │   └── llm_judge.py             # LLM-based judge
-│   ├── evaluators/                  # Evaluation strategies
-│   │   ├── __init__.py
-│   │   ├── completeness_evaluator.py # Task completeness evaluation
-│   │   ├── efficiency_evaluator.py   # Action efficiency evaluation
-│   │   └── consistency_evaluator.py  # Logical consistency evaluation
-│   └── factory.py                   # Judge factory
+│   ├── factory.py                   # Judge factory
+│   └── models/                      # Judge model implementations
+│       ├── __init__.py
+│       ├── base_judge.py            # Abstract base judge
+│       ├── llm_judge.py             # LLM-based judge
+│       └── rule_based_judge.py      # Rule-based judge
 │
 ├── scripts/                         # Data processing and utility scripts
 │   ├── data_processing/             # Data processing scripts
 │   │   ├── assemble_instances.py    # Convert raw games to actions
 │   │   ├── assemble_random.py       # Random sampling
 │   │   └── assemble_shortest.py     # Shortest sequences
-│   ├── action_processing/           # Action modification scripts
-│   │   ├── action_modifier.py       # REMOVE/MISSING tag processing
-│   │   └── sequence_validator.py    # Action sequence validation
-│   └── setup/                       # Setup and configuration scripts
-│       ├── install_deps.py          # Dependency installation
-│       └── check_api_keys.py        # API key validation
+│   └── action_processing/           # Action modification scripts
+│       ├── action_modifier.py       # REMOVE/MISSING tag processing
+│       └── sequence_validator.py    # Action sequence validation
 │
 ├── experiments/                     # Experiment definitions and runners
 │   ├── __init__.py
 │   ├── experiment_runner.py         # Main experiment orchestrator
-│   ├── configurations/              # Experiment configurations
-│   │   ├── __init__.py
-│   │   ├── base_config.py           # Base experiment config
-│   │   ├── cross_validation_config.py # Cross-validation setup
-│   │   └── ablation_config.py       # Ablation study setup
+│   ├── one_shot_evaluator.py        # One-shot evaluation mode
+│   ├── generate_performance_matrix.py # Performance table generation
 │   └── analysis/                    # Analysis modules
 │       ├── __init__.py
-│       ├── performance_analyzer.py  # Performance metrics
-│       ├── convergence_analyzer.py  # Convergence analysis
-│       └── visualization_generator.py # Charts and plots
+│       └── recall_precision_evaluator.py # Recall/precision metrics
 │
-├── outputs/                         # All output files
-│   ├── experiments/                 # Experiment results
-│   │   ├── runs/                    # Individual experiment runs
-│   │   └── summaries/               # Experiment summaries
-│   ├── analysis/                    # Analysis results
-│   │   ├── metrics/                 # Performance metrics
-│   │   ├── reports/                 # Text reports
-│   │   └── comparisons/             # Model comparisons
-│   └── visualizations/              # Generated plots and charts
-│       ├── performance/             # Performance visualizations
-│       ├── convergence/             # Convergence plots
-│       └── comparisons/             # Comparison charts
+├── workspace/                       # Additional workspace files
+│   ├── experiment_runner.py         # Alternative experiment runner
+│   ├── requirements.txt             # Workspace-specific requirements
+│   ├── models/                      # Alternative model implementations
+│   │   ├── __init__.py
+│   │   ├── judge_llm.py            # Judge LLM implementation
+│   │   ├── planner_llm.py          # Planner LLM implementation
+│   │   ├── llm_providers.py        # LLM provider utilities
+│   │   ├── workflow_orchestrator.py # Workflow orchestration
+│   │   ├── llm_annotator.py        # LLM annotation utilities
+│   │   ├── llm_simplifier.py       # LLM simplification utilities
+│   │   └── llm_single_shot.py      # Single-shot evaluation
+│   └── scripts/                     # Workspace scripts
+│       ├── action_modifier.py       # Action modification utilities
+│       ├── assemble_instances.py    # Instance assembly
+│       ├── assemble_random.py       # Random assembly
+│       └── assemble_shortest.py     # Shortest path assembly
+│
+├── outputs/                         # Experiment results and outputs
+│   ├── *.json                       # Individual experiment results
+│   │                                # Format: [Planner]_[Judge].json
+│   └── single-shot_*.json           # One-shot evaluation results
 │
 ├── config/                          # Configuration files
 │   ├── __init__.py
@@ -112,15 +107,10 @@ Task-Agents/
 │       └── full_evaluation.yaml     # Full evaluation config
 │
 ├── docs/                            # Documentation
-│   ├── README.md                    # Documentation index
-│   ├── api/                         # API documentation
-│   ├── tutorials/                   # Usage tutorials
-│   ├── examples/                    # Example usage
-│   └── architecture/                # Architecture documentation
+│   └── README.md                    # Documentation index
 │
-└── tests/                           # Test suite
-    ├── __init__.py
-    ├── unit/                        # Unit tests
-    ├── integration/                 # Integration tests
-    └── fixtures/                    # Test data and fixtures
+├── paper/                           # Research paper
+│   └── Plan_Verification.pdf        # Published research paper
+│
+└── mcp-servers/                     # MCP server implementations
 ```

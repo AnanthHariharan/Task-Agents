@@ -20,30 +20,36 @@ The system supports multiple LLM providers (GPT-4o-mini, DeepSeek-R1, Gemini 2.5
 
 ```
 Task-Agents/
-├── data/                   # TEACh dataset and processed data
-│   ├── processed/          # Processed action sequences  
-│   └── raw/               # Original TEACh dataset files
-├── planning-agent/         # Planning agent implementations
-│   ├── models/            # LLM and rule-based planners
-│   └── factory.py         # Planner factory for all models
-├── judge-llm/             # Judge agent implementations
-│   ├── models/            # LLM and rule-based judges  
-│   └── factory.py         # Judge factory for all models
-├── shared/                # Shared utilities and providers
-│   ├── llm_providers/     # OpenAI, DeepSeek, Gemini, LLaMA providers
-│   ├── utils/             # Action parsing, logging, file utilities
-│   └── workflow/          # Orchestrator for iterative workflows
-├── experiments/           # Experiment framework and evaluation
-│   ├── analysis/          # Recall/precision evaluation tools
+├── data/                   # Processed TEACh dataset sequences
+│   ├── seq_all.json       # All processed action sequences
+│   ├── seq_redundancies.json # Sequences with redundant actions  
+│   └── seq_shortest.json  # Optimized shortest sequences
+├── games/                 # Raw TEACh dataset
+│   └── train/            # ~1200 game episode files (*.game.json)
+├── planning-agent/        # Planning agent implementations
+│   ├── models/           # LLM and rule-based planners
+│   └── factory.py        # Planner factory for all models
+├── judge-llm/            # Judge agent implementations
+│   ├── models/          # LLM and rule-based judges  
+│   └── factory.py       # Judge factory for all models
+├── shared/               # Shared utilities and providers
+│   ├── llm_providers/   # OpenAI, DeepSeek, Gemini, LLaMA providers
+│   ├── utils/           # Action parsing, logging, file utilities
+│   └── workflow/        # Orchestrator for iterative workflows
+├── experiments/          # Experiment framework and evaluation
+│   ├── analysis/        # Recall/precision evaluation tools
 │   ├── one_shot_evaluator.py        # Table 1 equivalent evaluation
 │   ├── experiment_runner.py         # Main experiment orchestrator
 │   └── generate_performance_matrix.py  # Paper table generation
-├── outputs/               # Experiment results and LaTeX tables
-│   ├── experiments/       # Full experiment results
-│   ├── performance_matrices/  # Paper tables (LaTeX format)
-│   └── visualizations/    # Analysis charts and plots
-└── scripts/               # Data processing and utilities
-    └── data_processing/   # TEACh dataset assembly scripts
+├── workspace/            # Additional experimental workspace
+│   ├── models/          # Alternative model implementations
+│   └── scripts/         # Workspace-specific processing scripts
+├── outputs/              # Experiment results (JSON format)
+│   ├── *Plan_*Judge.json # Planner-Judge combination results
+│   └── single-shot_*.json # One-shot evaluation results
+└── scripts/              # Data processing and utilities
+    ├── data_processing/  # TEACh dataset assembly scripts
+    └── action_processing/ # Action sequence modification tools
 ```
 
 ## 🛠️ Installation
@@ -81,6 +87,7 @@ Task-Agents/
    # Process raw TEACh dataset (needed for full experiments)
    python scripts/data_processing/assemble_instances.py
    python scripts/data_processing/assemble_shortest.py
+   python scripts/data_processing/assemble_random.py
    ```
 
 ## 🚀 Quick Start
@@ -204,10 +211,12 @@ Performance matrices showing recall and precision for all planner-judge combinat
 | Rule-based          | 77          | 76          | 75         | 74      | **78**     |
 
 ### **Generated Outputs**
-- **LaTeX Tables**: Ready-to-use LaTeX code for paper inclusion
-- **Raw Data**: JSON files with detailed metrics for further analysis  
-- **Summary Reports**: Performance comparisons and statistical analysis
-- **Visualizations**: Heatmaps and distribution plots
+- **JSON Results**: Individual experiment results in `outputs/` directory
+  - Format: `[Planner]Plan_[Judge]Judge.json` (e.g., `GPT-Plan_DS-Judge.json`)
+  - One-shot results: `single-shot_[Model].json`
+- **Performance Matrices**: Generated LaTeX tables for research papers
+- **Detailed Metrics**: Recall, precision, and F1-score breakdowns
+- **Statistical Analysis**: Cross-model performance comparisons
 
 ## 🔧 Configuration
 
@@ -297,10 +306,10 @@ flake8
 #### Import Errors
 If you encounter import errors, it's due to hyphens in directory names (`judge-llm`, `planning-agent`). The demo (`test_seq.py`) includes mock classes to work around this.
 
-**For development:**
-- Directory structure uses hyphens for organization
-- Python imports require workarounds (see `test_seq.py` for examples)
-- Use `importlib.util.spec_from_file_location()` for direct imports
+**Solutions:**
+- Use the demo script: `python test_seq.py` (includes mock implementations)
+- For development, use `importlib.util.spec_from_file_location()` for direct imports
+- Alternative: Use the `workspace/` directory which has underscore-based naming
 
 #### API Key Issues
 ```bash

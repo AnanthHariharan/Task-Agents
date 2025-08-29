@@ -1,1 +1,0 @@
-# Multi-model plan verification system
