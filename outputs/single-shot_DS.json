@@ -1,0 +1,1645 @@
+[
+  {
+    "file": "../all_game_files/7d2a79f43e605c36_1657.game.json",
+    "actions": [
+      "Commander.Say('I need the newspaper to be placed on a single table.')",
+      "Driver.Say('what should i do')",
+      "Commander.Say('I need the newspaper placed on a single table.')",
+      "Driver.PickUp('Newspaper') // Driver picks up the newspaper",
+      "Driver.PutAOnB('Newspaper', 'CoffeeTable') // Driver places the newspaper on the coffee table"
+    ],
+    "# GOAL": "Place the newspaper on a single table."
+  },
+  {
+    "file": "../all_game_files/17dfd631e1080392_3a62.game.json",
+    "actions": [
+      "Commander.Say('please water the plant')",
+      "Driver.Say('hello how can I help you?')",
+      "Commander.Say('please water the plant')",
+      "Driver.Move(3.0) // Driver moves to the plant",
+      "Driver.PickUp('Cup') // Driver picks up the cup",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant') // Driver pours water from the cup into the plant"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/c3aabf431a64e351_e223.game.json",
+    "actions": [
+      "Driver.Say('What shall I do today?')",
+      "Commander.Say('prepare coffee')",
+      "Driver.Move(0.25) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine') // Driver places the mug on the coffee machine",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine",
+      "Commander.Say('done')"
+    ],
+    "# GOAL": "Prepare coffee."
+  },
+  {
+    "file": "../all_game_files/9fbb55df14428a20_0e79.game.json",
+    "actions": [
+      "Driver.Say('How may I assist you today?')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Commander.Say('can you put my alarm clock on my bed for me please')",
+      "Driver.Move(1.75) // Driver moves to the alarm clock",
+      "Driver.PickUp('AlarmClock') // Driver picks up the alarm clock",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PutAOnB('AlarmClock', 'Bed') // Driver places the alarm clock on the bed"
+    ],
+    "# GOAL": "Place the alarm clock on the bed."
+  },
+  {
+    "file": "../all_game_files/c5348c2abd0cef19_071b.game.json",
+    "actions": [
+      "Driver.Say('what is the task today please')",
+      "Commander.Say('Put the remote on the single coffee table. The remote is on the couch.')",
+      "Driver.Move(0.5) // Driver moves to the remote",
+      "Driver.PickUp('RemoteControl') // Driver picks up the remote",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.PutAOnB('RemoteControl', 'CoffeeTable') // Driver places the remote on the coffee table",
+      "Commander.Say('Finish')"
+    ],
+    "# GOAL": "Place the remote on the coffee table."
+  },
+  {
+    "file": "../all_game_files/beeccf5b8cbc54a6_f57c.game.json",
+    "actions": [
+      "Driver.Say('how can i help')",
+      "Commander.Say('water the plant please')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the pot",
+      "Driver.TurnLeft(360.0) // Driver turns left",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/326b070baeb3ee6e_04ff.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what should I do?')",
+      "Driver.Move(-1.0) // Driver moves",
+      "Commander.Say('The game is finished.')",
+      "Commander.Say('There is nothing else to complete.')",
+      "Commander.Say('Thanks!')",
+      "Driver.Move(0.75) // Driver moves"
+    ],
+    "# GOAL": "No task to complete."
+  },
+  {
+    "file": "../all_game_files/eadfce2fe0336a57_3092.game.json",
+    "actions": [
+      "Commander.Say('water the plant')",
+      "Driver.Move(3.0) // Driver moves to the bowl",
+      "Driver.PickUp('Bowl') // Driver picks up the bowl",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant') // Driver pours water from the bowl into the plant",
+      "Driver.Say('then')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/23cf6855a2d08080_e337.game.json",
+    "actions": [
+      "Driver.Say('what should i do')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Commander.Say('Put all sports equipment on any bed. It is beside the bed on the floor by the basket.')",
+      "Driver.Move(0.25) // Driver moves to the tennis racket",
+      "Driver.PickUp('TennisRacket') // Driver picks up the tennis racket",
+      "Driver.PutAOnB('TennisRacket', 'Bed') // Driver places the tennis racket on the bed",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('That\\'s it. Thanks')"
+    ],
+    "# GOAL": "Place all sports equipment on the bed."
+  },
+  {
+    "file": "../all_game_files/a53339c1decca356_4b31.game.json",
+    "actions": [
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('please take the mug from the table and put it in the sink')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(2.5) // Driver moves to the sink",
+      "Driver.PutAOnB('Mug', 'Sink') // Driver places the mug in the sink",
+      "Commander.Say('that is all. thank you')"
+    ],
+    "# GOAL": "Place the mug in the sink."
+  },
+  {
+    "file": "../all_game_files/c0d9aee4cadda787_a318.game.json",
+    "actions": [
+      "Driver.Say('What can I help you with today?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('i\\'d like my plant watered')",
+      "Driver.Move(0.5) // Driver moves to the bowl",
+      "Driver.PickUp('Bowl') // Driver picks up the bowl",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant') // Driver pours water from the bowl into the plant",
+      "Driver.Say('anything else?')",
+      "Commander.Say('thank you!')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/d8c17cf24263b0a2_58b6.game.json",
+    "actions": [
+      "Driver.Say('hello')",
+      "Driver.Say('what is my task')",
+      "Commander.Say('boil a potato')",
+      "Commander.Say('its next to the stove')",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.Say('done')",
+      "Commander.Say('thats it')"
+    ],
+    "# GOAL": "Boil a potato."
+  },
+  {
+    "file": "../all_game_files/9e4ae1fcf15944c9_dc14.game.json",
+    "actions": [
+      "Driver.Say('what can i do for ya?')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Commander.Say('please put the newspaper onto a single sofa')",
+      "Driver.Move(1.5) // Driver moves to the newspaper",
+      "Driver.PickUp('Newspaper') // Driver picks up the newspaper",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PutAOnB('Newspaper', 'Sofa') // Driver places the newspaper on the sofa",
+      "Driver.TurnLeft(90.0) // Driver turns left"
+    ],
+    "# GOAL": "Place the newspaper on the sofa."
+  },
+  {
+    "file": "../all_game_files/8d187c2be57b026b_4e41.game.json",
+    "actions": [
+      "Driver.Say('hey how can I help?')",
+      "Commander.Say('water the plant please')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet # REMOVE: unnecessary to turn off faucet when not turned on yet",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant') // Driver pours water from the mug into the plant",
+      "Driver.TurnLeft(180.0) // Driver turns left"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/0ecae89ae3864ab4_1615.game.json",
+    "actions": [
+      "Driver.Say('what should i do?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('hi..put all remotes on one coffe table')",
+      "Driver.Move(0.75) // Driver moves to the remote",
+      "Driver.PickUp('RemoteControl') // Driver picks up the remote",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PutAOnB('RemoteControl', 'CoffeeTable') // Driver places the remote on the coffee table",
+      "Commander.Say('done thank')"
+    ],
+    "# GOAL": "Place all remotes on the coffee table."
+  },
+  {
+    "file": "../all_game_files/63c8f47335dc1243_2503.game.json",
+    "actions": [
+      "Commander.Say('Can you fill a mug with coffee for me')",
+      "Commander.Say('There is a clean one on the white table')",
+      "Driver.Move(0.25) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(2.25) // Driver moves to the coffee machine",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine') // Driver places the mug on the coffee machine",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine"
+    ],
+    "# GOAL": "Fill a mug with coffee."
+  },
+  {
+    "file": "../all_game_files/487aad20c3aa3368_d798.game.json",
+    "actions": [
+      "Driver.Say('my task')",
+      "Commander.Say('clean the coffee mug')",
+      "Commander.Say('it is inside the coffee maker')",
+      "Driver.Move(4.25) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PourFromAIntoB('Mug', 'Sink') // Driver pours residue from the mug into the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet",
+      "Commander.Say('done, thanks!!')"
+    ],
+    "# GOAL": "Clean the coffee mug."
+  },
+  {
+    "file": "../all_game_files/7337be5c30b1b5d1_874c.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Driver.Move(1.25) // Driver moves to the bowl",
+      "Driver.PickUp('Bowl') // Driver picks up the bowl",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('You need to water the plant.')",
+      "Driver.Move(0.75) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant') // Driver pours water from the bowl into the plant",
+      "Driver.Say('Anything else?')",
+      "Commander.Say('Great work. All tasks complete. Thank you.')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/97b884a0f892799f_ca33.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('clean the mug')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.5) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PutAOnB('Mug', 'Sink') // Driver places the mug in the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.PickUp('Mug') // Driver picks up the mug"
+    ],
+    "# GOAL": "Clean the mug."
+  },
+  {
+    "file": "../all_game_files/01dff4073c2a53e6_47a5.game.json",
+    "actions": [
+      "Commander.Say('HI!')",
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('I need the alarm clock on a furniture.')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('AlarmClock') // Driver picks up the alarm clock",
+      "Driver.PutAOnB('AlarmClock', 'Desk') // Driver places the alarm clock on the desk",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Say('Done')",
+      "Commander.Say('perfect')"
+    ],
+    "# GOAL": "Place the alarm clock on a piece of furniture."
+  },
+  {
+    "file": "../all_game_files/66f67a99f785f66f_3bf9.game.json",
+    "actions": [
+      "Driver.Say('what can I assist with?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.25) // Driver moves to the mug",
+      "Commander.Say('i need my plant watered')",
+      "Driver.Move(0.5) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant') // Driver pours water from the mug into the plant",
+      "Driver.Say('all set!')",
+      "Commander.Say('thanks')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/362002a475895b4e_ec4d.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('Clean the mug')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the mug",
+      "Commander.Say('mug is in coffee maker')",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PutAOnB('Mug', 'Sink') // Driver places the mug in the sink",
+      "Driver.PickUp('Mug') // Driver picks up the mug"
+    ],
+    "# GOAL": "Clean the mug."
+  },
+  {
+    "file": "../all_game_files/17dfd631e1080392_4482.game.json",
+    "actions": [
+      "Driver.Say('hi, what can I do for you?')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Commander.Say('please water the plan')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the cup",
+      "Commander.Say('plant*')",
+      "Driver.Move(2.5) // Driver moves to the plant",
+      "Driver.PickUp('Cup') // Driver picks up the cup",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant') // Driver pours water from the cup into the plant"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/5a86bb695fceb5d9_692c.game.json",
+    "actions": [
+      "Driver.Say('Hi, what should I do today?')",
+      "Commander.Say('get the remote control ftom the table and put onto a chair')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('computer table')",
+      "Driver.Move(2.0) // Driver moves to the remote",
+      "Driver.PickUp('RemoteControl') // Driver picks up the remote",
+      "Driver.Move(-0.5) // Driver moves to the sofa",
+      "Driver.PutAOnB('RemoteControl', 'Sofa') // Driver places the remote on the sofa",
+      "Driver.Say('done')"
+    ],
+    "# GOAL": "Place the remote on the chair."
+  },
+  {
+    "file": "../all_game_files/102a3c062caa480b_476d.game.json",
+    "actions": [
+      "Driver.Say('What am i doing today')",
+      "Commander.Say('hello')",
+      "Commander.Say('get the pencil from the black bin and place onto a furniture')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(1.5) // Driver moves to the pencil",
+      "Driver.Move(0.25) // Driver moves to the pencil",
+      "Driver.PickUp('Pencil') // Driver picks up the pencil",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PutAOnB('Pencil', 'Desk') // Driver places the pencil on the desk"
+    ],
+    "# GOAL": "Place the pencil on a piece of furniture."
+  },
+  {
+    "file": "../all_game_files/ca9d0996ab052ec0_3ed0.game.json",
+    "actions": [
+      "Driver.Say('what can i do today')",
+      "Driver.Move(0.75) // Driver moves to the pot",
+      "Commander.Say('Hello, water the plant')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Commander.Say('Use a bowl or cup to get water from the sink')",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Driver.Say('done')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/cf56f28793f5e133_fbd4.game.json",
+    "actions": [
+      "Driver.Say('hi what should I do today?')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the bowl",
+      "Driver.PickUp('Bowl') // Driver picks up the bowl",
+      "Commander.Say('water the plant')",
+      "Driver.Move(4.25) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant') // Driver pours water from the bowl into the plant",
+      "Driver.Say('ok what should I do next?')",
+      "Commander.Say('great job')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/1d99b9a4ce291a24_1ad3.game.json",
+    "actions": [
+      "Driver.Say('Hi. What should I do today?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('hi, please boil a potato')",
+      "Driver.Move(0.75) // Driver moves to the potato",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.75) // Driver moves to the pot",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.ToggleOn('StoveKnob') // Driver turns on the stove",
+      "Commander.Say('cool')"
+    ],
+    "# GOAL": "Boil a potato."
+  },
+  {
+    "file": "../all_game_files/9bf72a7a9d0e098a_64ad.game.json",
+    "actions": [
+      "Driver.Say('Hi! What can I do?')",
+      "Commander.Say('wash the cloth near the sink pls')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.25) // Driver moves to the cloth",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.PutAOnB('Cloth', 'Sink') // Driver places the cloth in the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.Say('Done.')"
+    ],
+    "# GOAL": "Wash the cloth."
+  },
+  {
+    "file": "../all_game_files/af49e2061b576182_7eeb.game.json",
+    "actions": [
+      "Driver.Say('how can i help you?')",
+      "Commander.Say('water my plants!')",
+      "Driver.Say('aww ok')",
+      "Driver.Move(1.25) // Driver moves to the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Driver.TurnLeft(90.0) // Driver turns left"
+    ],
+    "# GOAL": "Water the plants."
+  },
+  {
+    "file": "../all_game_files/b4a09fb079903901_63da.game.json",
+    "actions": [
+      "Driver.Say('hello')",
+      "Commander.Say('Good day!')",
+      "Driver.Say('task please')",
+      "Commander.Say('Today I\\'d like you to prepare a cup of coffee.')",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.Move(0.5) // Driver moves to the coffee machine",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine') // Driver places the mug on the coffee machine",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine",
+      "Driver.Say('done')",
+      "Commander.Say('Thank you.')"
+    ],
+    "# GOAL": "Prepare a cup of coffee."
+  },
+  {
+    "file": "../all_game_files/f8331b1c6c5f716a_7c99.game.json",
+    "actions": [
+      "Driver.Say('whats first?')",
+      "Commander.Say('boil the potato in a bowl of water')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the potato",
+      "Commander.Say('potato is on the cabinet beside the basin')",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.Move(2.25) // Driver moves to the pot",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.ToggleOn('StoveKnob') // Driver turns on the stove",
+      "Commander.Say('done thanks')"
+    ],
+    "# GOAL": "Boil a potato."
+  },
+  {
+    "file": "../all_game_files/8526975435605a6b_62cd.game.json",
+    "actions": [
+      "Driver.Say('What can  I do today')",
+      "Commander.Say('all laptops on same bed')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the laptop",
+      "Driver.PickUp('Laptop') // Driver picks up the laptop",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(-0.75) // Driver moves to the bed",
+      "Driver.Move(0.5) // Driver moves to the bed",
+      "Driver.PutAOnB('Laptop', 'Bed') // Driver places the laptop on the bed",
+      "Commander.Say('great')"
+    ],
+    "# GOAL": "Place all laptops on the same bed."
+  },
+  {
+    "file": "../all_game_files/52cd9e926f6e4767_af84.game.json",
+    "actions": [
+      "Commander.Say('can you place the saltshaker into a cabinet')",
+      "Driver.Move(0.5) // Driver moves to the saltshaker",
+      "Driver.PickUp('SaltShaker') // Driver picks up the saltshaker",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('the salt shaker is on the table')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(-0.25) // Driver moves to the cabinet",
+      "Driver.Open('Cabinet') // Driver opens the cabinet",
+      "Driver.PutAOnB('SaltShaker', 'Cabinet') // Driver places the saltshaker in the cabinet",
+      "Commander.Say('thats great')"
+    ],
+    "# GOAL": "Place the saltshaker in a cabinet."
+  },
+  {
+    "file": "../all_game_files/c5216e91776571e9_fb71.game.json",
+    "actions": [
+      "Driver.Say('what can i do for you?')",
+      "Driver.Move(1.5) // Driver moves to the bowl",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(2.25) // Driver moves to the bowl",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('water my plant please')",
+      "Driver.Say('sure thing')",
+      "Driver.PickUp('Bowl') // Driver picks up the bowl",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant') // Driver pours water from the bowl into the plant",
+      "Driver.Say('done!')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/19f512eab5786ae2_fbce.game.json",
+    "actions": [
+      "Driver.Say('what should i do')",
+      "Commander.Say('Hello. Please grab the book on the armchair and place it on the desk.')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Commander.Say('The arm chair is behind you to the right')",
+      "Driver.Move(2.0) // Driver moves to the book",
+      "Driver.PickUp('Book') // Driver picks up the book",
+      "Commander.Say('Place it on the desk to your left')",
+      "Driver.PutAOnB('Book', 'Desk') // Driver places the book on the desk",
+      "Commander.Say('Great...All tasks complete')",
+      "Commander.Say('Thanks')"
+    ],
+    "# GOAL": "Place the book on the desk."
+  },
+  {
+    "file": "../all_game_files/ce2be720bcbc9aed_ad06.game.json",
+    "actions": [
+      "Driver.Say('what can i help with?')",
+      "Commander.Say('water the plant please!')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.25) // Driver moves to the pot",
+      "Driver.Say('sure thing')",
+      "Driver.Move(1.75) // Driver moves to the pot",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.PutAOnB('Pot', 'CounterTop') // Driver places the pot on the counter",
+      "Driver.PickUp('Cup') // Driver picks up the cup",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant') // Driver pours water from the cup into the plant"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/3d9705361c99978d_6749.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Driver.TurnLeft(450.0) // Driver turns left",
+      "Commander.Say('Please rinse the cloth with water.')",
+      "Driver.Move(0.75) // Driver moves to the cloth",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet # REMOVE: unnecessary to turn off faucet when not turned on yet",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.PutAOnB('Cloth', 'Sink') // Driver places the cloth in the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Commander.Say('thank you')",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet"
+    ],
+    "# GOAL": "Rinse the cloth with water."
+  },
+  {
+    "file": "../all_game_files/beeccf5b8cbc54a6_68fc.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Commander.Say('i need my plant watered')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Say('ok')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the pot",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.Say('found a pot with water and see the plant, watering now')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Commander.Say('thank you')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/9f562303eaada44a_6928.game.json",
+    "actions": [
+      "Driver.Say('first task?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('water plant please')",
+      "Driver.Move(5.0) // Driver moves to the pot",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(2.75) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Commander.Say('done thanks')",
+      "Driver.Say('next')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/ab2a07eab2b458d7_783e.game.json",
+    "actions": [
+      "Driver.Say('how can i help?')",
+      "Commander.Say('can you prepare coffee in a clean mug')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PourFromAIntoB('Mug', 'Sink') // Driver pours residue from the mug into the sink",
+      "Driver.Move(0.25) // Driver moves to the coffee machine",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine",
+      "Driver.Say('done')",
+      "Driver.Say('is that all?')",
+      "Commander.Say('thank you')"
+    ],
+    "# GOAL": "Prepare coffee in a clean mug."
+  },
+  {
+    "file": "../all_game_files/19e060787ca1778e_505b.game.json",
+    "actions": [
+      "Commander.Say('Please clean all the cloths')",
+      "Commander.Say('there is one next to the sink')",
+      "Driver.Say('do you mean put all the dirty clothing in the sink?')",
+      "Commander.Say('rinse them with water in the sink')",
+      "Driver.Say('thank you')",
+      "Driver.Move(1.25) // Driver moves to the cloth",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet # REMOVE: unnecessary to turn off faucet when not turned on yet",
+      "Driver.PutAOnB('Cloth', 'Sink') // Driver places the cloth in the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet"
+    ],
+    "# GOAL": "Clean all the cloths."
+  },
+  {
+    "file": "../all_game_files/7b4616a527911de2_a403.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Commander.Say('Hi, today I\\'d like my cloth placed in the bathtub please')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the cloth",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the bathtub",
+      "Driver.Move(0.5) // Driver moves to the bathtub",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet # REMOVE: unnecessary to turn off faucet when not turned on yet",
+      "Driver.PutAOnB('Cloth', 'Bathtub') // Driver places the cloth in the bathtub",
+      "Commander.Say('great work, thank you')"
+    ],
+    "# GOAL": "Place the cloth in the bathtub."
+  },
+  {
+    "file": "../all_game_files/45ad98d344984bbe_e1c4.game.json",
+    "actions": [
+      "Driver.Say('h')",
+      "Driver.Say('i')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(2.0) // Driver moves to the faucet",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.5) // Driver moves to the faucet",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet",
+      "Commander.Say('clean all cloths')",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.PutAOnB('Cloth', 'CounterTop') // Driver places the cloth on the counter"
+    ],
+    "# GOAL": "Clean all cloths."
+  },
+  {
+    "file": "../all_game_files/8b69018b22bfca92_82c3.game.json",
+    "actions": [
+      "Driver.Say('what are we doing today')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Commander.Say('The pillow needs to be put on the sofa')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.PickUp('Pillow') // Driver picks up the pillow",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the sofa",
+      "Driver.PutAOnB('Pillow', 'Sofa') // Driver places the pillow on the sofa",
+      "Driver.Say('ok done')",
+      "Commander.Say('Great job! We are done')",
+      "Driver.Say('sweet')"
+    ],
+    "# GOAL": "Place the pillow on the sofa."
+  },
+  {
+    "file": "../all_game_files/049700c23d1cbaa7_4a52.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('hi')",
+      "Commander.Say('clean a dirty plate')",
+      "Driver.Move(3.5) // Driver moves to the plate",
+      "Driver.PickUp('Plate') // Driver picks up the plate",
+      "Driver.PutAOnB('Plate', 'Sink') // Driver places the plate in the sink",
+      "Commander.Say('plate is next to sink')",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.Say('done')",
+      "Commander.Say('good job')"
+    ],
+    "# GOAL": "Clean a dirty plate."
+  },
+  {
+    "file": "../all_game_files/77c96ff01a8a2406_195e.game.json",
+    "actions": [
+      "Driver.Say('how can i help')",
+      "Commander.Say('could you please prepare coffee in a clean mug')",
+      "Driver.TurnLeft(360.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the mug",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.TurnLeft(360.0) // Driver turns left",
+      "Driver.PourFromAIntoB('Mug', 'Pot') // Driver pours residue from the mug into the pot",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine",
+      "Driver.Say('all done')",
+      "Commander.Say('all done thank you')"
+    ],
+    "# GOAL": "Prepare coffee in a clean mug."
+  },
+  {
+    "file": "../all_game_files/f30954c822c3dec6_0d4c.game.json",
+    "actions": [
+      "Driver.Say('what can i help with?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('water my plant please!')",
+      "Driver.Move(1.0) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.Say('sure thing')",
+      "Driver.Say('i found a mug on the table with water in it')",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant') // Driver pours water from the mug into the plant",
+      "Commander.Say('Go for it!')",
+      "Driver.Say('done')",
+      "Commander.Say('thank you!')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/17dfd631e1080392_748e.game.json",
+    "actions": [
+      "Driver.Say('hi how can I help?')",
+      "Driver.TurnLeft(450.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the cup",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('can you water the plant')",
+      "Driver.Move(2.0) // Driver moves to the plant",
+      "Driver.Say('ok')",
+      "Driver.Move(1.0) // Driver moves to the cup",
+      "Driver.PickUp('Cup') // Driver picks up the cup",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant') // Driver pours water from the cup into the plant",
+      "Driver.Say('good?')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/b46fbc7a46058c5b.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('please take the fork next the coffee machine and place it in the sink')",
+      "Driver.Move(1.5) // Driver moves to the fork",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Fork') // Driver picks up the fork",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(2.0) // Driver moves to the sink",
+      "Driver.PutAOnB('Fork', 'Sink') // Driver places the fork in the sink",
+      "Commander.Say('Thank you')",
+      "Driver.Say('Ive placed the fork is in the sink')"
+    ],
+    "# GOAL": "Place the fork in the sink."
+  },
+  {
+    "file": "../all_game_files/5fceb114ca1450e6_f30d.game.json",
+    "actions": [
+      "Commander.Say('hi')",
+      "Commander.Say('we are boiling a potato')",
+      "Driver.Say('What should I do tody?')",
+      "Commander.Say('potato on counter right of sink')",
+      "Driver.Move(0.75) // Driver moves to the potato",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.Move(0.25) // Driver moves to the pot",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.PutAOnB('Pot', 'StoveBurner') // Driver places the pot on the stove",
+      "Commander.Say('cool')"
+    ],
+    "# GOAL": "Boil a potato."
+  },
+  {
+    "file": "../all_game_files/8d6b8732d5394f80_6459.game.json",
+    "actions": [
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(2.0) // Driver moves to the mug",
+      "Commander.Say('prepare coffee in a clean mug')",
+      "Driver.Say('What should I do')",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PutAOnB('Mug', 'Sink') // Driver places the mug in the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PourFromAIntoB('Mug', 'Sink') // Driver pours residue from the mug into the sink",
+      "Driver.Say('Done')"
+    ],
+    "# GOAL": "Prepare coffee in a clean mug."
+  },
+  {
+    "file": "../all_game_files/fb7144d9ca162d20_c245.game.json",
+    "actions": [
+      "Driver.Say('Hello. What is my task?')",
+      "Commander.Say('Hi, please pick up the watch')",
+      "Driver.Move(1.0) // Driver moves to the watch",
+      "Driver.PickUp('Watch') // Driver picks up the watch",
+      "Driver.Move(-0.75) // Driver moves to the chair",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.25) // Driver moves to the chair",
+      "Commander.Say('and place on chair')",
+      "Driver.Say('Watch is picked up. What is next task?')",
+      "Driver.PutAOnB('Watch', 'ArmChair') // Driver places the watch on the chair",
+      "Commander.Say('place on chair')"
+    ],
+    "# GOAL": "Place the watch on the chair."
+  },
+  {
+    "file": "../all_game_files/12a9943280200b82_1c95.game.json",
+    "actions": [
+      "Driver.Say('hello')",
+      "Driver.Say('what are my tasks')",
+      "Commander.Say('hi')",
+      "Commander.Say('put egg on dining table')",
+      "Commander.Say('egg is next to stove')",
+      "Driver.Move(0.5) // Driver moves to the egg",
+      "Driver.PickUp('Egg') // Driver picks up the egg",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(1.25) // Driver moves to the dining table",
+      "Driver.PutAOnB('Egg', 'DiningTable') // Driver places the egg on the dining table",
+      "Commander.Say('good job')"
+    ],
+    "# GOAL": "Place the egg on the dining table."
+  },
+  {
+    "file": "../all_game_files/3e658e951fc5985a_b525.game.json",
+    "actions": [
+      "Driver.Say('whats first')",
+      "Commander.Say('get the creditcard that is inside a box next to the chair')",
+      "Commander.Say('and place on the desk')",
+      "Driver.Move(0.75) // Driver moves to the credit card",
+      "Driver.TurnLeft(360.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the credit card",
+      "Driver.PickUp('CreditCard') // Driver picks up the credit card",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the desk",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PutAOnB('CreditCard', 'Desk') // Driver places the credit card on the desk"
+    ],
+    "# GOAL": "Place the credit card on the desk."
+  },
+  {
+    "file": "../all_game_files/4c98e155c32cdc6f_7acc.game.json",
+    "actions": [
+      "Driver.Say('What shall I do today?')",
+      "Commander.Say('Hi. Please fill a mug with coffee.  There is one in the sink.')",
+      "Driver.Move(0.25) // Driver moves to the mug",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet # REMOVE: unnecessary to turn off faucet when not turned on yet",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PourFromAIntoB('Mug', 'Sink') // Driver pours residue from the mug into the sink",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.ToggleOff('CoffeeMachine') // Driver turns off the coffee machine # REMOVE: unnecessary to turn off coffee machine when not turned on yet",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine') // Driver places the mug on the coffee machine",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine"
+    ],
+    "# GOAL": "Fill a mug with coffee."
+  },
+  {
+    "file": "../all_game_files/dcd7c65e1f7c5c35_d8e3.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('prepare coffee')",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(1.75) // Driver moves to the coffee machine",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the coffee machine",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine') // Driver places the mug on the coffee machine",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine",
+      "Driver.Say('done')"
+    ],
+    "# GOAL": "Prepare coffee."
+  },
+  {
+    "file": "../all_game_files/128e184d9477800b_9b48.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Open('Cabinet') // Driver opens the cabinet",
+      "Commander.Say('please clean the cloth on the tub')",
+      "Driver.Open('Cabinet2') // Driver opens the cabinet",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the cloth",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the sink",
+      "Driver.PutAOnB('Cloth', 'Sink') // Driver places the cloth in the sink"
+    ],
+    "# GOAL": "Clean the cloth on the tub."
+  },
+  {
+    "file": "../all_game_files/26b752b6faa2d377_05fa.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Commander.Say('please prepare coffe in a mug, the mug is on the counter top')",
+      "Driver.Move(2.25) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(2.75) // Driver moves to the coffee machine",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the coffee machine",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine') // Driver places the mug on the coffee machine",
+      "Commander.Say('thank you')"
+    ],
+    "# GOAL": "Prepare coffee in a mug."
+  },
+  {
+    "file": "../all_game_files/8340b584c6d7a610_1810.game.json",
+    "actions": [
+      "Driver.Say('How can I help today?')",
+      "Commander.Say('there is a cup in the blue bin, can you put it in a cabinet for me please')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(5.25) // Driver moves to the cup",
+      "Driver.PickUp('Cup') // Driver picks up the cup",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Say('Which cabinet should I put it in?')",
+      "Driver.Move(1.0) // Driver moves to the cabinet",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Open('Cabinet') // Driver opens the cabinet",
+      "Driver.PutAOnB('Cup', 'Cabinet') // Driver places the cup in the cabinet"
+    ],
+    "# GOAL": "Place the cup in a cabinet."
+  },
+  {
+    "file": "../all_game_files/01ced2f37b0b68f6_2ad6.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what can I do?')",
+      "Commander.Say('hi, please boil a potato')",
+      "Driver.Move(2.0) // Driver moves to the potato",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(2.0) // Driver moves to the pot",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.ToggleOn('StoveKnob') // Driver turns on the stove",
+      "Driver.Say('done')",
+      "Commander.Say('c00')"
+    ],
+    "# GOAL": "Boil a potato."
+  },
+  {
+    "file": "../all_game_files/ad2e4eb0b24a5940_9c9d.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the mug",
+      "Commander.Say('water the plant')",
+      "Driver.Move(2.0) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant') // Driver pours water from the mug into the plant",
+      "Driver.Say('Done')",
+      "Commander.Say('done')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/0fcf6c2d73c72ff2_b53b.game.json",
+    "actions": [
+      "Driver.Say('Hello! I am here. What is my task.')",
+      "Commander.Say('Hello!')",
+      "Commander.Say('You need to put the SPOON into the SINK.')",
+      "Driver.Move(2.0) // Driver moves to the spoon",
+      "Driver.PickUp('Spoon') // Driver picks up the spoon",
+      "Driver.Move(0.25) // Driver moves to the sink",
+      "Driver.PutAOnB('Spoon', 'Sink') // Driver places the spoon in the sink",
+      "Commander.Say('Perfect!')",
+      "Driver.Say('Thank you!')",
+      "Commander.Say('great job!')",
+      "Commander.Say('Task is complete!')"
+    ],
+    "# GOAL": "Place the spoon in the sink."
+  },
+  {
+    "file": "../all_game_files/2abef7c08f5a1bd1_0abd.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Commander.Say('Put all remote controls on any side table')",
+      "Driver.Say('where can I find it?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(4.0) // Driver moves to the remote",
+      "Driver.PickUp('RemoteControl') // Driver picks up the remote",
+      "Commander.Say('there is on on the white chair by the laptop')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PutAOnB('RemoteControl', 'SideTable') // Driver places the remote on the side table",
+      "Driver.Say('is this completed>')",
+      "Commander.Say('yes')"
+    ],
+    "# GOAL": "Place all remote controls on a side table."
+  },
+  {
+    "file": "../all_game_files/76346edc156ce83e_31fc.game.json",
+    "actions": [
+      "Driver.Say('whats next')",
+      "Commander.Say('Clean the cup by the sink. It is dirty.')",
+      "Driver.Navigation()",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet # REMOVE: unnecessary to turn off faucet when not turned on yet",
+      "Driver.PickUp('Cup') // Driver picks up the cup",
+      "Driver.PutAOnB('Cup', 'Sink') // Driver places the cup in the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet",
+      "Driver.PickUp('Cup') // Driver picks up the cup",
+      "Commander.Say('That\\'s all. Good job')"
+    ],
+    "# GOAL": "Clean the cup by the sink."
+  },
+  {
+    "file": "../all_game_files/1d99b9a4ce291a24_720c.game.json",
+    "actions": [
+      "Commander.Say('hi')",
+      "Driver.Say('Hi, first task?')",
+      "Commander.Say('boil the potato on the black table')",
+      "Driver.Move(0.25) // Driver moves to the potato",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(0.25) // Driver moves to the potato",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(2.5) // Driver moves to the pot",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.Say('next')"
+    ],
+    "# GOAL": "Boil the potato."
+  },
+  {
+    "file": "../all_game_files/40cc5749c7d59c06_5c97.game.json",
+    "actions": [
+      "Driver.Say('what can I help you with?')",
+      "Commander.Say('i\\'d like my plant watered')",
+      "Driver.Move(1.25) // Driver moves to the pot",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the pot",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(1.25) // Driver moves to the plant",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Driver.Say('all set?')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/ff6766847495298f_1549.game.json",
+    "actions": [
+      "Commander.Say('Can you place all newspapers on a sofa for me')",
+      "Commander.Say('the newspaper is on the coffee table')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(4.0) // Driver moves to the newspaper",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the newspaper",
+      "Driver.PickUp('Newspaper') // Driver picks up the newspaper",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the sofa",
+      "Driver.PutAOnB('Newspaper', 'Sofa') // Driver places the newspaper on the sofa",
+      "Driver.Say('Done')"
+    ],
+    "# GOAL": "Place all newspapers on the sofa."
+  },
+  {
+    "file": "../all_game_files/beeccf5b8cbc54a6_fe3a.game.json",
+    "actions": [
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Say('hi, how can i help today?')",
+      "Commander.Say('water the plant please')",
+      "Driver.Say('sure')",
+      "Driver.Move(0.75) // Driver moves to the pot",
+      "Driver.TurnLeft(360.0) // Driver turns left",
+      "Driver.Move(0.25) // Driver moves to the pot",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Driver.Say('all set!')",
+      "Commander.Say('thanks')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/66f67a99f785f66f_80c3.game.json",
+    "actions": [
+      "Driver.Say('what would you like?')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Commander.Say('i need my plant watered')",
+      "Driver.Say('yes of course')",
+      "Driver.Move(1.5) // Driver moves to the bowl",
+      "Driver.PickUp('Bowl') // Driver picks up the bowl",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(3.75) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant') // Driver pours water from the bowl into the plant",
+      "Driver.Say('all set?')",
+      "Commander.Say('thank you')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/20df70c5052d0ef2_2978.game.json",
+    "actions": [
+      "Driver.Say('how can i help you?')",
+      "Commander.Say('just water the plant')",
+      "Driver.Say('sure')",
+      "Driver.Move(1.0) // Driver moves to the cup",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Cup') // Driver picks up the cup",
+      "Driver.Say('i founda cup with water by the stove')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(1.75) // Driver moves to the plant",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant') // Driver pours water from the cup into the plant",
+      "Commander.Say('all set thanks')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/19bc78054d050bf3_7afc.game.json",
+    "actions": [
+      "Commander.Say('Hi, can you make coffee?')",
+      "Driver.Say('hello how can I help?')",
+      "Commander.Say('a mug is in the right cupboard under the sink')",
+      "Driver.Say('sure thank you')",
+      "Driver.Move(0.75) // Driver moves to the mug",
+      "Driver.Open('Cabinet') // Driver opens the cabinet",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.Move(0.25) // Driver moves to the sink",
+      "Driver.PourFromAIntoB('Mug', 'Sink') // Driver pours residue from the mug into the sink",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine",
+      "Driver.Say('coffee is done')",
+      "Commander.Say('all good, thanks!')"
+    ],
+    "# GOAL": "Make coffee."
+  },
+  {
+    "file": "../all_game_files/cf56f28793f5e133_9c70.game.json",
+    "actions": [
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Say('how can I help?')",
+      "Commander.Say('can you water the plant?')",
+      "Driver.Move(0.5) // Driver moves to the mug",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Say('sure')",
+      "Driver.Move(2.25) // Driver moves to the mug",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(4.5) // Driver moves to the plant",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PourFromAIntoB('Mug', 'HousePlant') // Driver pours water from the mug into the plant",
+      "Driver.TurnLeft(180.0) // Driver turns left"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/f33b56cdba2cb217_4758.game.json",
+    "actions": [
+      "Driver.Say('how can i help?')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Commander.Say('can you please make coffee?')",
+      "Commander.Say('a mug is in the sink')",
+      "Driver.Say('of course')",
+      "Driver.Move(3.25) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine') // Driver places the mug on the coffee machine",
+      "Driver.ToggleOff('CoffeeMachine') // Driver turns off the coffee machine # REMOVE: unnecessary to turn off coffee machine when not turned on yet",
+      "Commander.Say('all good, thanks!')",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine",
+      "Driver.PickUp('Mug') // Driver picks up the mug"
+    ],
+    "# GOAL": "Make coffee."
+  },
+  {
+    "file": "../all_game_files/01ced2f37b0b68f6_0042.game.json",
+    "actions": [
+      "Driver.Say('how can i help today?')",
+      "Commander.Say('can you boil a potato?')",
+      "Driver.Move(1.5) // Driver moves to the potato",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(2.5) // Driver moves to the pot",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.PutAOnB('Pot', 'StoveBurner') // Driver places the pot on the stove",
+      "Driver.ToggleOn('StoveKnob') // Driver turns on the stove",
+      "Driver.Say('done')",
+      "Commander.Say('thank you')"
+    ],
+    "# GOAL": "Boil a potato."
+  },
+  {
+    "file": "../all_game_files/68030be4329479ac_032a.game.json",
+    "actions": [
+      "Driver.Say('what can i do today')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('Please boil the potato located by the sink')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(4.75) // Driver moves to the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.Say('done')",
+      "Driver.Say('next?')",
+      "Commander.Say('Great job!')"
+    ],
+    "# GOAL": "Boil the potato."
+  },
+  {
+    "file": "../all_game_files/13fa23347f23a35c_a81c.game.json",
+    "actions": [
+      "Driver.Say('how can I help?')",
+      "Commander.Say('please take the scrub brush next to the toilet and place it on the counter top')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(1.25) // Driver moves to the scrub brush",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the scrub brush",
+      "Driver.PickUp('ScrubBrush') // Driver picks up the scrub brush",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the counter",
+      "Driver.PutAOnB('ScrubBrush', 'CounterTop') // Driver places the scrub brush on the counter",
+      "Driver.Say('anything else?')",
+      "Commander.Say('That is all. Thank you')"
+    ],
+    "# GOAL": "Place the scrub brush on the counter."
+  },
+  {
+    "file": "../all_game_files/4e893adaff5699af_ab4f.game.json",
+    "actions": [
+      "Driver.Say('hi, what should i do today?')",
+      "Commander.Say('put book on bed\\'')",
+      "Driver.Say('where can i find the book')",
+      "Commander.Say('book is on the table')",
+      "Driver.Say('ok')",
+      "Driver.Move(1.25) // Driver moves to the book",
+      "Driver.PickUp('Book') // Driver picks up the book",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the bed",
+      "Driver.PutAOnB('Book', 'Bed') // Driver places the book on the bed",
+      "Driver.Say('done')",
+      "Commander.Say('thank you')"
+    ],
+    "# GOAL": "Place the book on the bed."
+  },
+  {
+    "file": "../all_game_files/23af5a3818b1a1b2_89c0.game.json",
+    "actions": [
+      "Driver.Say('What shall I do today?')",
+      "Commander.Say('We need to clean a cloth with water.')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Commander.Say('The cloth is in the lower right hand cabinet at the sink')",
+      "Driver.Open('Cabinet') // Driver opens the cabinet",
+      "Driver.Move(0.25) // Driver moves to the cloth",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet # REMOVE: unnecessary to turn off faucet when not turned on yet",
+      "Driver.PutAOnB('Cloth', 'Sink') // Driver places the cloth in the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet",
+      "Commander.Say('Great work. Tasks complete. Thank you.')"
+    ],
+    "# GOAL": "Clean the cloth with water."
+  },
+  {
+    "file": "../all_game_files/b8f22271faff678f_dce6.game.json",
+    "actions": [
+      "Driver.Say('hello, what is my task?')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Commander.Say('water the plant')",
+      "Driver.Move(1.25) // Driver moves to the cup",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Cup') // Driver picks up the cup",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Cup', 'HousePlant') // Driver pours water from the cup into the plant",
+      "Commander.Say('bring some water in a container')",
+      "Driver.Say('done')",
+      "Commander.Say('done')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/39c72b597c0254a0_b4de.game.json",
+    "actions": [
+      "Driver.Say('hi, how can I help you?')",
+      "Driver.TurnLeft(450.0) // Driver turns left",
+      "Driver.Move(5.25) // Driver moves to the pot",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Commander.Say('please water plant')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.Move(1.0) // Driver moves to the plant",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.25) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Driver.Say('ok?')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/96f5c7fccc368de7_dfe9.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what to do')",
+      "Commander.Say('hi')",
+      "Commander.Say('put the book on the bed onto a desk')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the book",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Book') // Driver picks up the book",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.25) // Driver moves to the desk",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.PutAOnB('Book', 'Desk') // Driver places the book on the desk"
+    ],
+    "# GOAL": "Place the book on the desk."
+  },
+  {
+    "file": "../all_game_files/4a82a50d27933bd2_d698.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what is my task?')",
+      "Commander.Say('clean all plates')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.PickUp('Plate') // Driver picks up the plate",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(1.25) // Driver moves to the sink",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet # REMOVE: unnecessary to turn off faucet when not turned on yet",
+      "Driver.PutAOnB('Plate', 'Sink') // Driver places the plate in the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.Say('how many?')",
+      "Commander.Say('i will finish thanks')"
+    ],
+    "# GOAL": "Clean all plates."
+  },
+  {
+    "file": "../all_game_files/f2f6723ebab1e6a2_bfeb.game.json",
+    "actions": [
+      "Commander.Say('Hello, water the plant')",
+      "Driver.Move(1.5) // Driver moves to the bowl",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.25) // Driver moves to the bowl",
+      "Driver.PickUp('Bowl') // Driver picks up the bowl",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.25) // Driver moves to the plant",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Bowl', 'HousePlant') // Driver pours water from the bowl into the plant",
+      "Commander.Say('Good job')",
+      "Driver.Say('done')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/68030be4329479ac_40a1.game.json",
+    "actions": [
+      "Driver.Say('what can i do today')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Commander.Say('Hello, please boil a potato.')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(4.75) // Driver moves to the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the pot",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.Say('done')",
+      "Commander.Say('Great job. The task is complete.')"
+    ],
+    "# GOAL": "Boil a potato."
+  },
+  {
+    "file": "../all_game_files/cae57f0a642448c5_ac99.game.json",
+    "actions": [
+      "Driver.Say('hi')",
+      "Driver.Say('what should I do?')",
+      "Driver.Move(-2.75) // Driver moves to the cloth",
+      "Commander.Say('hello. Rinse dirty cloth with water.')",
+      "Driver.Move(-1.25) // Driver moves to the cloth",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.Move(0.75) // Driver moves to the sink",
+      "Driver.PutAOnB('Cloth', 'Sink') // Driver places the cloth in the sink",
+      "Driver.Move(-0.5) // Driver moves to the faucet",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Commander.Say('done')"
+    ],
+    "# GOAL": "Rinse the dirty cloth with water."
+  },
+  {
+    "file": "../all_game_files/03882bf65cc08dd2_d4cd.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('hello')",
+      "Driver.Say('Hi')",
+      "Commander.Say('please rinse the plate in the sink')",
+      "Driver.Navigation()",
+      "Driver.Move(0.5) // Driver moves to the plate",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet",
+      "Driver.Say('Done')",
+      "Commander.Say('well done')"
+    ],
+    "# GOAL": "Rinse the plate in the sink."
+  },
+  {
+    "file": "../all_game_files/a4e0351b007787d8_3b07.game.json",
+    "actions": [
+      "Driver.Say('What should I do today?')",
+      "Commander.Say('Hello! The cup is dirty, rinse it with water.')",
+      "Driver.Move(3.5) // Driver moves to the mug",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(3.0) // Driver moves to the counter",
+      "Driver.PutAOnB('Mug', 'CounterTop') // Driver places the mug on the counter",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet # REMOVE: unnecessary to turn off faucet when not turned on yet",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PutAOnB('Mug', 'Sink') // Driver places the mug in the sink",
+      "Commander.Say('Perfect! Thats it!')",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet"
+    ],
+    "# GOAL": "Rinse the dirty cup with water."
+  },
+  {
+    "file": "../all_game_files/fa88fcb69514bd64_1cc0.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Commander.Say('please prepare a coffee in a clean mug')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(3.25) // Driver moves to the mug",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.PourFromAIntoB('Mug', 'Sink') // Driver pours residue from the mug into the sink",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine",
+      "Driver.Say('done')",
+      "Commander.Say('thank you that\\'s everything')"
+    ],
+    "# GOAL": "Prepare coffee in a clean mug."
+  },
+  {
+    "file": "../all_game_files/a9e62b795c603884_c7d6.game.json",
+    "actions": [
+      "Driver.Say('Hello, what am I doing today')",
+      "Commander.Say('hi')",
+      "Commander.Say('get the cloth from the bin beside the toilet')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.75) // Driver moves to the cloth",
+      "Commander.Say('and put in the bathtub')",
+      "Commander.Say('look down')",
+      "Driver.Move(1.25) // Driver moves to the cloth",
+      "Driver.PickUp('Cloth') // Driver picks up the cloth",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(2.0) // Driver moves to the bathtub",
+      "Driver.PutAOnB('Cloth', 'Bathtub') // Driver places the cloth in the bathtub"
+    ],
+    "# GOAL": "Place the cloth in the bathtub."
+  },
+  {
+    "file": "../all_game_files/40cc5749c7d59c06_2288.game.json",
+    "actions": [
+      "Driver.Say('how can i help today?')",
+      "Driver.Move(1.0) // Driver moves to the pot",
+      "Commander.Say('i\\'d lke my plant watered')",
+      "Driver.Move(1.25) // Driver moves to the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.5) // Driver moves to the pot",
+      "Driver.Say('sure')",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Driver.Say('found a pot with water')",
+      "Driver.Say('should be done')",
+      "Commander.Say('thanks')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/abf1ba0f0c8908f8_37ed.game.json",
+    "actions": [
+      "Commander.Say('hello')",
+      "Commander.Say('Are you ready for your task?')",
+      "Commander.Say('Please put the watch on the coffee table.')",
+      "Commander.Say('Please respond')",
+      "Driver.Move(1.0) // Driver moves to the watch",
+      "Driver.PickUp('Watch') // Driver picks up the watch",
+      "Driver.PutAOnB('Watch', 'CoffeeTable') // Driver places the watch on the coffee table",
+      "Driver.Move(2.0) // Driver moves to the watch",
+      "Driver.PickUp('Watch2') // Driver picks up the watch",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.PutAOnB('Watch2', 'CoffeeTable') // Driver places the watch on the coffee table",
+      "Commander.Say('Thank you task finished')"
+    ],
+    "# GOAL": "Place the watch on the coffee table."
+  },
+  {
+    "file": "../all_game_files/0a743cc844d97d87_5037.game.json",
+    "actions": [
+      "Driver.Say('How can I help?')",
+      "Commander.Say('please put all pepper shakers in a cabinet')",
+      "Driver.Move(0.5) // Driver moves to the pepper shaker",
+      "Driver.Open('Cabinet') // Driver opens the cabinet",
+      "Driver.PickUp('PepperShaker') // Driver picks up the pepper shaker",
+      "Driver.PutAOnB('PepperShaker', 'Cabinet') // Driver places the pepper shaker in the cabinet",
+      "Driver.ToggleOff('Microwave') // Driver turns off the microwave # REMOVE: unnecessary to turn off microwave when not turned on yet",
+      "Driver.Open('Microwave') // Driver opens the microwave",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.PutAOnB('Potato', 'CounterTop') // Driver places the potato on the counter",
+      "Driver.PickUp('PepperShaker2') // Driver picks up the pepper shaker",
+      "Driver.PutAOnB('PepperShaker2', 'Cabinet') // Driver places the pepper shaker in the cabinet"
+    ],
+    "# GOAL": "Place all pepper shakers in a cabinet."
+  },
+  {
+    "file": "../all_game_files/f22a5e8ac037a420_1c14.game.json",
+    "actions": [
+      "Driver.Say('Hello. What is my first task?')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the mug",
+      "Commander.Say('Please put coffee in mug')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Mug') // Driver picks up the mug",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(2.25) // Driver moves to the coffee machine",
+      "Driver.PutAOnB('Mug', 'CoffeeMachine') // Driver places the mug on the coffee machine",
+      "Driver.ToggleOn('CoffeeMachine') // Driver turns on the coffee machine",
+      "Driver.Say('Coffee is done')",
+      "Commander.Say('awesome we are done!')",
+      "Driver.Say('Great!')"
+    ],
+    "# GOAL": "Put coffee in the mug."
+  },
+  {
+    "file": "../all_game_files/dda9ea220761cc52_5a27.game.json",
+    "actions": [
+      "Driver.Say('my task')",
+      "Commander.Say('boil a potato')",
+      "Driver.Say('where is it')",
+      "Commander.Say('on the chair')",
+      "Driver.Move(1.0) // Driver moves to the potato",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Potato') // Driver picks up the potato",
+      "Driver.TurnLeft(360.0) // Driver turns left",
+      "Driver.Move(6.25) // Driver moves to the pot",
+      "Driver.PutAOnB('Potato', 'Pot') // Driver places the potato in the pot",
+      "Driver.ToggleOn('StoveKnob') // Driver turns on the stove",
+      "Commander.Say('done')",
+      "Driver.ToggleOn('StoveKnob2') // Driver turns on the stove"
+    ],
+    "# GOAL": "Boil a potato."
+  },
+  {
+    "file": "../all_game_files/843b6119ebcac0fb_cced.game.json",
+    "actions": [
+      "Commander.Say('please can you put the tomato i nthe fridge?')",
+      "Commander.Say('they are in the middle unite next to the fridge')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the tomato",
+      "Driver.Open('Cabinet') // Driver opens the cabinet",
+      "Driver.Move(-0.25) // Driver moves to the cabinet",
+      "Driver.Open('Cabinet2') // Driver opens the cabinet",
+      "Driver.Open('Cabinet3') // Driver opens the cabinet",
+      "Commander.Say('the next one')",
+      "Driver.PickUp('Tomato') // Driver picks up the tomato",
+      "Driver.Open('Fridge') // Driver opens the fridge",
+      "Driver.PutAOnB('Tomato', 'Fridge') // Driver places the tomato in the fridge",
+      "Commander.Say('done')"
+    ],
+    "# GOAL": "Place the tomato in the fridge."
+  },
+  {
+    "file": "../all_game_files/10416a22a004208e_48f4.game.json",
+    "actions": [
+      "Driver.Say('hi, what can i do for you?')",
+      "Commander.Say('just need my plant watered please')",
+      "Driver.Say('sure')",
+      "Driver.Move(0.75) // Driver moves to the pot",
+      "Driver.Say('i see a container with water on the stove')",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the plant",
+      "Commander.Say('nice that should work')",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Driver.Say('doen')",
+      "Driver.Say('done')",
+      "Commander.Say('sweet')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/fbd409f780c2bf3b_cd58.game.json",
+    "actions": [
+      "Commander.Say('hi, put all remote controls on the coffee tables')",
+      "Commander.Say('on a coffee table sorry')",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.25) // Driver moves to the remote",
+      "Driver.Say('Where are the remotes?')",
+      "Driver.Move(2.25) // Driver moves to the remote",
+      "Commander.Say('one is on the single sofa seat')",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(1.0) // Driver moves to the remote",
+      "Driver.PickUp('RemoteControl') // Driver picks up the remote",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.PutAOnB('RemoteControl', 'CoffeeTable') // Driver places the remote on the coffee table",
+      "Driver.TurnLeft(90.0) // Driver turns left"
+    ],
+    "# GOAL": "Place all remote controls on the coffee table."
+  },
+  {
+    "file": "../all_game_files/39c72b597c0254a0_4822.game.json",
+    "actions": [
+      "Driver.Say('my task today')",
+      "Commander.Say('The plant needs to be watered')",
+      "Driver.TurnLeft(270.0) // Driver turns left",
+      "Driver.Move(4.75) // Driver moves to the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Commander.Say('The plant is on the table')",
+      "Driver.Move(0.5) // Driver moves to the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.PickUp('Pot') // Driver picks up the pot",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(4.0) // Driver moves to the plant",
+      "Driver.PourFromAIntoB('Pot', 'HousePlant') // Driver pours water from the pot into the plant",
+      "Commander.Say('All done!')"
+    ],
+    "# GOAL": "Water the plant."
+  },
+  {
+    "file": "../all_game_files/823f0fe4bda8607c_34d8.game.json",
+    "actions": [
+      "Driver.Say('hey how can I help?')",
+      "Commander.Say('clean the plate please')",
+      "Driver.Move(1.0) // Driver moves to the plate",
+      "Driver.PickUp('Plate') // Driver picks up the plate",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.Move(2.0) // Driver moves to the sink",
+      "Driver.TurnLeft(90.0) // Driver turns left",
+      "Driver.Move(0.25) // Driver moves to the sink",
+      "Driver.TurnLeft(180.0) // Driver turns left",
+      "Driver.PutAOnB('Plate', 'Sink') // Driver places the plate in the sink",
+      "Driver.ToggleOn('Faucet') // Driver turns on the faucet",
+      "Driver.ToggleOff('Faucet') // Driver turns off the faucet",
+      "Commander.Say('thanks')"
+    ],
+    "# GOAL": "Clean the plate."
+  }
+]
