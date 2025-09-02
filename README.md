@@ -181,34 +181,24 @@ Direct evaluation of judge performance without iterative refinement:
 
 | Judge LLM        | Recall (%) | Precision (%) |
 |------------------|------------|---------------|
-| GPT-4o-mini      | **82**     | 76            |
-| DeepSeek-R1      | 78         | **79**        |
-| Gemini 2.5 Flash | 74         | 73            |
-| LLaMA 4 Scout    | 71         | 71            |
-| Rule-based       | 69         | 74            |
+| GPT-4o-mini      | **80**     | 93            |
+| DeepSeek-R1      | 68         | **100**       |
+| Gemini 2.5 Flash | 74         | 90            |
+| LLaMA 4 Scout    | 74         | 85            |
+| Rule-based       | 22         | 71            |
 
 ### **Tables 2 & 3: 4×4 Planner-Judge Matrix**
 Performance matrices showing recall and precision for all planner-judge combinations:
 
-**Recall (%) by Model Combination**
+**F-score by Model Combination**
 
-| Judge LLM \ Planner | GPT-4o-mini | DeepSeek-R1 | Gemini 2.5 | LLaMA 4 | Rule-based |
-|---------------------|-------------|-------------|------------|---------|------------|
-| GPT-4o-mini         | **85**      | 83          | 81         | 79      | 77         |
-| DeepSeek-R1         | 82          | **84**      | 80         | 78      | 76         |
-| Gemini 2.5 Flash    | 79          | 78          | **81**     | 76      | 74         |
-| LLaMA 4 Scout       | 76          | 75          | 74         | **77**  | 73         |
-| Rule-based          | 74          | 73          | 72         | 71      | **75**     |
+| Judge LLM \ Planner | GPT-4o-mini | DeepSeek-R1 | Gemini 2.5 | LLaMA 4 |
+|---------------------|-------------|-------------|------------|---------|
+| GPT-4o-mini         | 89.0        | 84.7        | 87.8       | 87.9    |
+| DeepSeek-R1         | 78.5        | 80.9        | 76.5       | 78.9    |
+| Gemini 2.5 Flash    | 90.7        | 91.2        | 93.9       | 92.2    |
+| LLaMA 4 Scout       | 83.5        | 85.3        | 85.9       | 81.6    |
 
-**Precision (%) by Model Combination**
-
-| Judge LLM \ Planner | GPT-4o-mini | DeepSeek-R1 | Gemini 2.5 | LLaMA 4 | Rule-based |
-|---------------------|-------------|-------------|------------|---------|------------|
-| GPT-4o-mini         | 78          | **80**      | 77         | 75      | 76         |
-| DeepSeek-R1         | **81**      | 79          | 78         | 76      | 77         |
-| Gemini 2.5 Flash    | 76          | 75          | **78**     | 74      | 75         |
-| LLaMA 4 Scout       | 74          | 73          | 72         | **76**  | 74         |
-| Rule-based          | 77          | 76          | 75         | 74      | **78**     |
 
 ### **Generated Outputs**
 - **JSON Results**: Individual experiment results in `outputs/` directory
